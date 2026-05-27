@@ -116,20 +116,22 @@
 #pragma comment(lib,"wldap32.lib")
 #pragma comment(lib,"Normaliz.lib")
 #ifdef _DEBUG
-#pragma comment(lib,"..\\ExternalObject\\curl\\libcurl_a_debug.lib")
+#pragma comment(lib,"source\\ExternalObject\\curl\\libcurl_a_debug.lib")
 #else
-#pragma comment(lib,"..\\ExternalObject\\curl\\libcurl_a.lib")
+#pragma comment(lib,"source\\ExternalObject\\curl\\libcurl_a.lib")
 
 #endif
 #include "ExternalObject\\FreeImage.h"
-#pragma comment(lib, "..\\ExternalObject\\FreeImage.lib")
+#pragma comment(lib, "source\\ExternalObject\\FreeImage.lib")
 
 
 #include "ExternalObject\\detours.h"
-#pragma comment(lib, "..\\ExternalObject\\detours.lib")
+#pragma comment(lib, "source\\ExternalObject\\detours.lib")
 
 
-#pragma comment(lib, "..\\ExternalObject\\CBGAMEGUARD.lib")
+#ifndef _DEBUG
+#pragma comment(lib, "source\\ExternalObject\\CBGAMEGUARD.lib")
+#endif
 namespace CBGAMEGUARD
 {
 

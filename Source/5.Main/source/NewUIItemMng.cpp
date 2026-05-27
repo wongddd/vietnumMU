@@ -65,7 +65,7 @@ ITEM* SEASON3B::CNewUIItemMng::CreateItem(WORD byType, WORD bySubType, BYTE byLe
 	if (pbySocketOptions == NULL)
 	{
 		pNewItem->SocketCount = 0;
-		assert(!"여기로 오는 경우에 소켓 옵션 관련 확인 필요");
+		assert(false);
 	}
 	else
 	{

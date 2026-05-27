@@ -138,6 +138,19 @@ void BDrawOutLine(int iPos_x, int iPos_y, int iWidth, int iHeight);
 void BRenderTabLine(float iPos_x, float iPos_y, float iTabWidth, float iTabHeight, int iTabNum, int iSelectNum);
 void GetDrawCircle(int ID, float X, float Y, float W, float CurrenX, float CurrenY, float SetScale, int ScaleSize, int ScalePosicion, float Alpha);
 
+#if defined(_DEBUG)
+inline void CheckGLError(const char* file, int line)
+{
+	GLenum err = glGetError();
+	if (err != GL_NO_ERROR)
+	{
+		char buf[256];
+		sprintf_s(buf, "OpenGL Error: 0x%X at %s(%d)", err, file, line);
+		OutputDebugStringA(buf);
+	}
+}
+#endif
+
 void InitVSync();
 bool IsVSyncAvailable();
 bool IsVSyncEnabled();

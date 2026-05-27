@@ -382,8 +382,11 @@ msbuild "Source/4.GameServer/GameServer.sln" /p:Configuration=Release_EX603 /p:P
 # GameServer (Season 8)
 msbuild "Source/4.GameServer/GameServer.sln" /p:Configuration=Release_EX803 /p:Platform=Win32
 
-# Main 客户端
+# Main 客户端 - Release
 msbuild "Source/5.Main/Main.sln" /p:Configuration="Global Release" /p:Platform=Win32
+
+# Main 客户端 - Debug（注意：必须指定 Platform=x86，而非 Win32）
+msbuild Source/5.Main/Main.vcxproj /p:Configuration=GlobalDebug /p:Platform=x86
 
 # 其他服务器
 msbuild "Source/1.ConnectServer/ConnectServer.sln" /p:Configuration=Release /p:Platform=Win32
@@ -404,7 +407,121 @@ msbuild "Source/6.GetMainInfo/GetMainInfo.sln" /p:Configuration=Release /p:Platf
 
 ---
 
-## 七、数据/资源缺口总结
+## 七、Debug 编译问题修复
+
+本章记录了 Main 客户端首次 Debug 编译时遇到的全部问题及修复方案。
+
+### 7.1 韩文编码导致转义序列错误
+
+**涉及文件**: `PortalMgr.cpp`, `NewUIItemMng.cpp`
+
+**现象**: C2059 语法错误 `!`、C2017 非法转义序列、C2001 常量换行符中断
+
+**原因**: 韩文 CP949 编码的字符串中包含字节 `0x5C`（即反斜杠 `\`），与 `assert(!"...")` 组合后形成非法转义序列，如 `\!`。Release 配置下 assert 被预处理移除，Debug 下保留暴露此问题。
+
+**修复**: 将 3 处 `assert(!"한국어 텍스트")` 替换为 `assert(false);`
+- `PortalMgr.cpp:96` — `assert(!"이동 할 위치가 정해지지 않은 상태")`
+- `PortalMgr.cpp:110` — 同上
+- `NewUIItemMng.cpp:68` — `assert(!"소켓 없는 경우에 대한 옵션 확인 필요")`
+
+### 7.2 CheckGLError 函数未定义
+
+**涉及文件**: `ZzzOpenglUtil.h`, `ZzzOpenglUtil.cpp`
+
+**现象**: `C3861 CheckGLError`: 找不到标识符
+
+**原因**: `ZzzOpenglUtil.cpp` 在 `#if defined(_DEBUG)` 块中调用了 `CheckGLError()`，但该函数仅声明未定义。Release 配置下 `_DEBUG` 未定义，调用被预处理移除。
+
+**修复**: 在 `ZzzOpenglUtil.h` 中添加内联定义：
+
+```cpp
+#if defined(_DEBUG)
+inline void CheckGLError(const char* file, int line)
+{
+    GLenum err = glGetError();
+    if (err != GL_NO_ERROR)
+    {
+        char buf[256];
+        sprintf_s(buf, "OpenGL Error: 0x%X at %s(%d)", err, file, line);
+        OutputDebugStringA(buf);
+    }
+}
+#endif
+```
+
+### 7.3 库路径解析错误
+
+**涉及文件**: `stdafx.h`
+
+**现象**: `LNK1104` 无法打开 `..\ExternalObject\curl\libcurl_a_debug.lib`
+
+**原因**: `#pragma comment(lib, "..\\ExternalObject\\...")` 中 `..\\` 从 `Source\5.Main\source\` 出发只到 `Source\5.Main\`，而非预期的 `Source\`。路径解析指向了不存在的 `Source\ExternalObject\`。
+
+**修复**: 将所有 `..\ExternalObject\` 替换为 `source\ExternalObject\`：
+
+| 库文件 | 修改内容 |
+|--------|---------|
+| `libcurl_a_debug.lib` | `..\ExternalObject\curl\` → `source\ExternalObject\curl\` |
+| `libcurl_a.lib` | 同上 |
+| `FreeImage.lib` | `..\ExternalObject\FreeImage\` → `source\ExternalObject\FreeImage\` |
+| `detours.lib` | `..\ExternalObject\MicrosoftResearch\` → `source\ExternalObject\MicrosoftResearch\` |
+| `CBGAMEGUARD.lib` | `..\ExternalObject\CBGAMEGUARD\` → `source\ExternalObject\CBGAMEGUARD\` |
+
+### 7.4 Debug 配置缺少 glew32s.lib
+
+**涉及文件**: `Main.vcxproj`
+
+**现象**: `LNK2001` 无法解析的外部符号 `___glewBindBuffer`, `___glewBufferData`, `___glewGenBuffers` 等 OpenGL 扩展函数
+
+**原因**: Release 配置在 Linker → AdditionalDependencies 中包含 `glew32s.lib`，但 Debug 配置遗漏
+
+**修复**: 在 Debug 配置的 `<AdditionalDependencies>` 中添加 `glew32s.lib;`
+
+### 7.5 CBGAMEGUARD 静态库 CRT 不匹配
+
+**涉及文件**: `stdafx.h`, `MainLoad.cpp`, `CB_Mapping.cpp`
+
+**现象**: 76 个 `LNK2038` 不匹配错误：CBGAMEGUARD.lib 各 obj 使用 `RuntimeLibrary="MT_StaticRelease"`，Debug 构建使用 `"MTd_StaticDebug"`，二者冲突
+
+**原因**: CBGAMEGUARD.lib 是预编译的 Release 静态库（`/MT`），与 Debug CRT（`/MTd`）二进制不兼容，导致 `_iterator_debug_level`、`_debug` 等值不匹配
+
+**修复**: 将所有 CBGAMEGUARD 引用和调用包裹在 `#ifndef _DEBUG` 守卫中：
+- `stdafx.h` — `#pragma comment(lib, ...)` 加守卫
+- `MainLoad.cpp:69-75` — `CBGAMEGUARD::PublicClass::SetTypeMain/LoadAttach/LoadEntryProc` 调用加守卫
+- `CB_Mapping.cpp:49-52` — `CBGAMEGUARD::PublicClass::SetOffsetMemory` 调用加守卫
+
+### 7.6 登录发送到已断开连接的 Socket
+
+**涉及文件**: `LoginWin.cpp`
+
+**现象**: 客户端日志显示 `[Send Packet Error] WSAGetLastError = 183`（`ERROR_ALREADY_EXISTS`）。首次登录尝试时协议状态为 `RECEIVE_JOIN_SERVER_SUCCESS`，但 GS 连接实际上已断开。
+
+**原因**: `RequestLogin()` 仅检查 `CurrentProtocolState == RECEIVE_JOIN_SERVER_SUCCESS`。该枚举值在 GS 连接断开后不会自动重置，导致向已关闭的 Socket 发送登录封包。
+
+**修复**: 增加全局状态变量 `g_bGameServerConnected` 验证：
+
+```cpp
+// 在 LoginWin.cpp 添加外部引用（约第 22 行）
+extern BOOL g_bGameServerConnected;
+
+// 修改登录条件（原第 284 行）
+if (CurrentProtocolState == RECEIVE_JOIN_SERVER_SUCCESS && g_bGameServerConnected)
+```
+
+### 7.7 修复总结
+
+| # | 问题 | 类型 | 文件 | 影响配置 |
+|---|------|------|------|---------|
+| 1 | 韩文编码转义序列 | 编译错误 | PortalMgr.cpp, NewUIItemMng.cpp | Debug |
+| 2 | CheckGLError 未定义 | 编译错误 | ZzzOpenglUtil.h | Debug |
+| 3 | 库路径解析错误 | 链接错误 | stdafx.h | Debug/Release |
+| 4 | 缺少 glew32s.lib | 链接错误 | Main.vcxproj | Debug |
+| 5 | CBGAMEGUARD CRT 不匹配 | 链接错误 | stdafx.h, MainLoad.cpp, CB_Mapping.cpp | Debug |
+| 6 | 登录发送到断开 Socket | 运行时错误 | LoginWin.cpp | Debug/Release |
+
+---
+
+## 八、数据/资源缺口总结
 
 | 缺失资源 | 路径 | 严重程度 | 解决方式 |
 |---------|------|---------|---------|

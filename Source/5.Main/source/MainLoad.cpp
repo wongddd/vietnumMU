@@ -68,9 +68,11 @@ bool MainLoad::Load()
 
 	if (gProtect.m_MainInfo.LoadAntihack)
 	{
+				#ifndef _DEBUG
 		CBGAMEGUARD::PublicClass::SetTypeMain(1);
 		CBGAMEGUARD::PublicClass::LoadAttach();
 		CBGAMEGUARD::PublicClass::LoadEntryProc();
+				#endif
 
 	}
 	

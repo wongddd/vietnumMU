@@ -18,6 +18,8 @@
 #include "./Utilities/Log/muConsoleDebug.h"
 #include "ProtocolSend.h"
 #include "ServerListManager.h"
+
+extern BOOL g_bGameServerConnected;
 #include "Reconnect.h"
 #include "./ExternalObject/leaf/regkey.h"
 #include "CB_DangKyInGame.h"
@@ -279,7 +281,7 @@ void CLoginWin::RequestLogin()
 		CUIMng::Instance().PopUpMsgWin(MESSAGE_INPUT_PASSWORD);
 	else
 	{
-		if (CurrentProtocolState == RECEIVE_JOIN_SERVER_SUCCESS)
+		if (CurrentProtocolState == RECEIVE_JOIN_SERVER_SUCCESS && g_bGameServerConnected)
 		{
 #if(UseReconnect)
 			memcpy(g_pReconnect->s_Data.ReconnectAccount, szID, 11);  //Add

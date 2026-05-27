@@ -93,7 +93,7 @@ void CPortalMgr::GetPortalPositionText(char * pszOut)
 
 	if (m_iPortalWorld == -1)
 	{
-		assert(!"이동 위치가 지정되지 않은 상태임");
+		assert(false);
 	}
 	else
 	{
@@ -107,7 +107,7 @@ void CPortalMgr::GetRevivePositionText(char * pszOut)
 
 	if (m_iReviveWorld == -1)
 	{
-		assert(!"이동 위치가 지정되지 않은 상태임");
+		assert(false);
 	}
 	else
 	{

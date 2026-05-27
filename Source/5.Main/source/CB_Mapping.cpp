@@ -46,10 +46,12 @@ void CB_Mapping::Update()
 
 	if (CacheTime > GetTickCount() || this->CheckConnectDLL) return;
 
+		#ifndef _DEBUG
 	CBGAMEGUARD::PublicClass::SetOffsetMemory((size_t)&LogInID, 4);
 	CBGAMEGUARD::PublicClass::SetOffsetMemory((size_t)&CharacterAttribute, 5);
 	CBGAMEGUARD::PublicClass::SetOffsetMemory((size_t)&g_hWnd, 6);
 	CBGAMEGUARD::PublicClass::SetOffsetMemory((size_t)&this->CheckConnectDLL, 9);
+		#endif
 
 
 
