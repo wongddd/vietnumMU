@@ -1,0 +1,65 @@
+# === 编译输出 ===
+BuildLog/
+Debug/
+Release/
+*.obj
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.lastbuildstate
+*.ipch
+*.sdf
+*.suo
+*.aps
+*.user
+*.vcxproj.user
+
+# === VS ===
+.vs/
+
+# === 编译产物 ===
+*.exe
+*.dll
+
+# === 压缩包 ===
+*.7z
+*.rar
+*.zip
+
+# === 第三方库 ===
+Source/5.Main/boost_1_80_0/
+Source/5.Main/sdk-directx9/
+Source/5.Main/dependencies/
+
+# === 客户端数据 ===
+ClientFile/Data/Sound/
+ClientFile/Data/Music/
+ClientFile/Data/Movie/
+ClientFile/Data/*.bmd
+ClientFile/Data/**/*.bmd
+ClientFile/Data/**/*.jpg
+ClientFile/Data/**/*.ozj
+ClientFile/Data/**/*.ozt
+ClientFile/Data/**/*.png
+ClientFile/Data/Glow.gld
+ClientFile/Data/*.dat
+ClientFile/Data/**/*.wav
+ClientFile/Data/**/*.mp3
+ClientFile/Data/**/*.ogg
+ClientFile/Data/Interface\ -\ Copy/
+ClientFile/*.dll
+ClientFile/*.pdb
+ClientFile/*.exp
+ClientFile/*.lib
+
+# === 日志 ===
+MuServer/7.Log/
+LOG/
+*.log
+
+# === 系统 ===
+Thumbs.db
+.DS_Store

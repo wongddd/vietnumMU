@@ -1,0 +1,7 @@
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。 [E:\MU\Source\5.Main\Main.vcxproj]
+  StdAfx.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(417,27): error C2146: 语法错误: 缺少“;”(在标识符“PVOID64”的前面) [E:\MU\Source\5.Main\Main.vcxproj]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(13416,13): error C3646: “Buffer”: 未知重写说明符 [E:\MU\Source\5.Main\Main.vcxproj]
