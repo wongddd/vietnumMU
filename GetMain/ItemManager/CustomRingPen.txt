@@ -1,7 +1,7 @@
-//==Hien thi option ring pent custom
-//==Chức năng này chỉ bổ sung cho item sẽ hiện option của nhẫn và dây chuyển , vẫn cần phảim thêm item vào customitem.txt nếu là item mới
+//==显示自定义戒指项链属性
+//==此功能仅为物品补充显示戒指和项链的属性，仍需要将新物品添加到 customitem.txt
 
-//===Ring (Nhẫn)
+//===戒指
 0
 //ItemIndex
 6832	
@@ -19,7 +19,7 @@
 
 end
 
-//=== Pen (Dây chuyền)
+//=== 项链
 1
 //ItemIndex
 6834

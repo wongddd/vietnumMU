@@ -1,35 +1,35 @@
 0
 //Index   Message
-0         "Bảo vệ đã hoàn thành không đúng cách"
-1         "Không thể khởi động lại kết nối"
-2         "Không thể kết nối đến máy chủ trò chơi !!"
-3         "Thời gian phản hồi quá lâu"
-4         "Không thể bắt đầu Kết Nối đến Máy Chủ"
-5         "Bản Quyền Thuộc: %s"
-6         "Không thể kết nối đến máy chủ"
-7         "Vượt quá thời gian phản hồi cho phép!"
-8         "File Main đã bị thay đổi !"
-9         "Phiên bản không hợp lệ"
-10        "Bạn đang bị chặn tạm thời , vui lòng thử lại sau!"
-11        "Bạn bị chặn kết nối từ máy chủ (1)" //Block HWID
-12        "Bạn bị chặn kết nối từ máy chủ (2)" //Block IP
-13        "Không thể nhận thông tin"
-14        "[1] Phát hiện phần mềm tiềm ẩn không mong muốn!" //Dump
-15        "[2] Phát hiện phần mềm tiềm ẩn không mong muốn!" //Exc
-16        "Có tập tin đã bị chỉnh sửa !" //CheckSum
-17        "[3] Phát hiện phần mềm tiềm ẩn không mong muốn!" //Maping
-18        "[4] Phát hiện phần mềm tiềm ẩn không mong muốn!" //LIBRARY
-19        "[5] Phát hiện phần mềm tiềm ẩn không mong muốn!" //regedit
-20        "[6] Phát hiện bộ nhớ Game đã bị thay đổi!" //memory inject
-21        "Ngắt kết nối từ Máy Chủ"
-22        "[7] Phát hiện phần mềm tiềm ẩn không mong muốn!"
-23        "[8] Phát hiện có module không hợp lệ!" //dll inject
-24        "Phát hiện chương trình tự động bàn phím"
-25        "Phát hiện một bộ gỡ lỗi"
-29        "Vui lòng chạy ứng dụng: Chạy dưới quyền quản trị viên"
-30        "Có điều gì đó không đúng! Hãy khởi động lại ứng dụng, xin vui lòng"
-31        "Giới hạn main.exe!"
-32        "Game chỉ hoạt động trên máy thật, không sử dụng Máy Ảo!"
+0         "保护完成方式不正确"
+1         "无法重新连接"
+2         "无法连接到游戏服务器！！"
+3         "响应时间过长"
+4         "无法开始连接到服务器"
+5         "版权归: %s"
+6         "无法连接到服务器"
+7         "超过允许的响应时间！"
+8         "Main文件已被修改！"
+9         "版本无效"
+10        "您已被暂时屏蔽，请稍后重试！"
+11        "您被服务器禁止连接 (1)" //Block HWID
+12        "您被服务器禁止连接 (2)" //Block IP
+13        "无法接收信息"
+14        "[1] 检测到潜在恶意软件！" //Dump
+15        "[2] 检测到潜在恶意软件！" //Exc
+16        "有文件已被修改！" //CheckSum
+17        "[3] 检测到潜在恶意软件！" //Maping
+18        "[4] 检测到潜在恶意软件！" //LIBRARY
+19        "[5] 检测到潜在恶意软件！" //regedit
+20        "[6] 检测到游戏内存已被修改！" //memory inject
+21        "服务器断开连接"
+22        "[7] 检测到潜在恶意软件！"
+23        "[8] 检测到无效模块！" //dll inject
+24        "检测到自动键盘程序"
+25        "检测到调试器"
+29        "请以管理员身份运行应用程序"
+30        "出现问题！请重新启动应用程序"
+31        "限制main.exe！"
+32        "游戏仅能在实体机上运行，请勿使用虚拟机！"
 end
 
 1

@@ -1,10 +1,10 @@
 //--world		MapName				TgaMapName					MusicMp3
 	83			"Acheron"			"ThanMaChien.tga"				""
-	87			"Thần Ma"			"ThanMaChien.tga"				""
-	98			"Công Thành Mini"		"CTCMini.tga"				""
-	105			"Boss Guild"		"BossGuild.tga"			    	""
-	106			"Dungeon PvP"		"dungeun.tga"			    	""
-	92			"ArenaVIP"		"LOL.tga"			    	""
-	88			"Loạn Chiến"		"NewMap97.tga"			    	""
+	87			"神魔"			"ThanMaChien.tga"				""
+	98			"迷你攻城"		"CTCMini.tga"				""
+	105			"战盟Boss"		"BossGuild.tga"			    	""
+	106			"地下城PvP"		"dungeun.tga"			    	""
+	92			"VIP竞技场"		"LOL.tga"			    	""
+	88			"乱战"		"NewMap97.tga"			    	""
 
 end

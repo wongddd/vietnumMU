@@ -9,18 +9,18 @@
 // 7 - Purple
 /////////////////////////////////////////////////////////////////////////////////////////
 //	#ID	#Color	#CommandInfo 		 	#InfoCommand	
-	0	1	"/Setpass <123>"		    "Chát Với Chủ Nhóm 123 Để PT"			
-	1	2	"/Post <Msg>"			    "Chat Toàn Thế Giới"		
-	2	3	"/Addstr <Điểm>"		    "Cộng Điểm Cho Sức Mạnh"				
-	3	3	"/Addagi <Điểm>"		    "Cộng Điểm Cho Nhanh Nhẹn"				
-	4	3	"/Addvit <Điểm>"		    "Cộng Điểm Cho Thể Lực"				
-	5	3	"/Addene <Điểm>"		    "Cộng Điểm Cho Nhanh Nhẹn"				
-	6	3	"/Addcmd <Điểm>"		    "Cộng Điểm Cho Mệnh Lệnh (DL)"				
-	7	4	"/Pkclear <Xóa PK>"		    "Xóa Tội Khi PK"				
-	8	5	"/Nv2"				        "Để Làm Max Nhiệm Vụ"				
-	9	6	"/Reset"				    "Reset Nhân Vật"		
-	10	7	"/Reset auto"				"Reset Tự Động"			
-	11	1	"/Xoado"				    "Xóa Toàn Bộ Hòm Đồ"				
-	12	6	"/Taydiem"				    "Tẩy Toàn Bộ Điểm Class"	
+	0	1	"/Setpass <123>"		    "与队长123聊天组队"			
+	1	2	"/Post <Msg>"			    "全服喊话"		
+	2	3	"/Addstr <点数>"		    "增加力量属性点"				
+	3	3	"/Addagi <点数>"		    "增加敏捷属性点"				
+	4	3	"/Addvit <点数>"		    "增加体力属性点"				
+	5	3	"/Addene <点数>"		    "增加敏捷属性点"				
+	6	3	"/Addcmd <点数>"		    "增加命令属性点 (DL)"				
+	7	4	"/Pkclear <清除PK>"		    "清除PK罪孽值"				
+	8	5	"/Nv2"				        "完成最大任务"				
+	9	6	"/Reset"				    "角色重置"		
+	10	7	"/Reset auto"				"自动重置"			
+	11	1	"/Xoado"				    "清空全部仓库"				
+	12	6	"/Taydiem"				    "洗点全部职业属性"	
 
 end
