@@ -1,5 +1,5 @@
 0
-//AlarmTime   	StandTime   EventTime   CloseTime
+//报警时间   	StandTime   EventTime   CloseTime
 1          		0              15          0             
 end
 
@@ -19,7 +19,7 @@ end
 0  		0	0      0		  145			
 end
 
-//Reward Top Tối đa Topp 10
+//奖励最多前10名
 4
 // Top		WX		WP		GP  Indexitembag
 	1		6		0  		0		146					

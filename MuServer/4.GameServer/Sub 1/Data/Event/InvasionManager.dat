@@ -1,19 +1,19 @@
 0
 //==========================================================>
-// Thanh Long Tái Thế =>> 	 	 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 青龙再世 =>> 	 	 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 0         *      *       *     *     07      00      0
 0         *      *       *     *     13      00      0
 0         *      *       *     *     18      30      0
 //==========================================================>
-// Sự Kiện Triệu Long Võ Tôn =>> 	 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 召龙武尊事件 =>> 	 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 1        *      *        *     *     02      00      0
 1        *      *        *     *     07      30      0
 1        *      *        *     *     19      00      0
 //==========================================================>
-// Sự Kiện Boss Vàng =>> 	 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 黄金Boss事件 =>> 	 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 2         *      *       *     *     0       15       0
 2         *      *       *     *     4       15       0
 2         *      *       *     *     8       15       0
@@ -21,14 +21,14 @@
 2         *      *       *     *     16      15       0
 2         *      *       *     *     20      15       0
 //==========================================================>
-// Sự Kiện Ma Thần =>>	Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 魔神事件 =>>	时间
+//Index   Year   Month   Day   DoW   时    分    Second
 3        *      *       *     *     11      30      0
 3        *      *       *     *     17      00      0
 3        *      *       *     *     23      30      0
 //==========================================================>
-// Sự Kiện Truy Tìm Kho Báu =>>		 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 寻宝事件 =>>		 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 4        *      *       *     *      03      15      0
 4        *      *       *     *      07      15      0
 4        *      *       *     *      11      15      0
@@ -36,8 +36,8 @@
 4        *      *       *     *      19      15      0
 4        *      *       *     *      23      15      0
 //==========================================================>
-// Sự Kiện Thỏ Ngọc =>>	Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 玉兔事件 =>>	时间
+//Index   Year   Month   Day   DoW   时    分    Second
 5         *      *       *     *     1       15      0
 5         *      *       *     *     5       15      0
 5         *      *       *     *     9       15      0
@@ -45,15 +45,15 @@
 5         *      *       *     *     17      15      0
 5         *      *       *     *     21      15      0
 //==========================================================>
-// Sự Kiện Kỵ Sỹ Hắc Ám =>>		 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 黑暗骑士事件 =>>		 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 6         *      *       *     *     02      30      0
 6         *      *       *     *     08      00      0
 6         *      *       *     *     14      00      0
 6         *      *       *     *     19      30      0
 //==========================================================>
-// Sự Kiện Qủy Vương =>>	 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 鬼王事件 =>>	 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 7         *      *       *     *     02      15      0
 7         *      *       *     *     06      15      0
 7         *      *       *     *     10      15      0
@@ -61,37 +61,37 @@
 7         *      *       *     *     18      15      0
 7         *      *       *     *     20      15      0
 //==========================================================>
-// Sự Kiện Thần Forest =>>		 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 森林之神事件 =>>		 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 8        *      *        *     *     03      00      0
 8        *      *        *     *     08      30      0
 8        *      *        *     *     14      30      0
 //==========================================================>
-// Sự Kiện Siêu Boss =>>	 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 超级Boss事件 =>>	 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 9         *      *       *     *     10      30      0
 9         *      *       *     *     21      30      0
 //==========================================================>
-// Boss Class =>>	 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// Boss Class =>>	 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 10         *      *      *     *     03      30      0
 10         *      *      *     *     09      00      0
 10         *      *      *     *     15      00      0
 //==========================================================>
-// Sự Kiện Đệ Nhất Kiếm Ma =>>		 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 第一剑魔事件 =>>		 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 11        *      *       *     *     04      00      0
 11        *      *       *     *     15      30      0
 11        *      *       *     *     21      00      0
 //==========================================================>
-// King Wolf =>>		 Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 狼王 =>>		 时间
+//Index   Year   Month   Day   DoW   时    分    Second
 12        *      *       *     *     04      30      0
 12        *      *       *     *     16      00      0
 12        *      *       *     *     22      30      0
 //==========================================================>
-// Rồng Đỏ =>>	Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 红龙 =>>	时间
+//Index   Year   Month   Day   DoW   时    分    Second
 13         *      *       *     *     01      30      0
 13         *      *       *     *     05      30      0
 13         *      *       *     *     09      30      0
@@ -99,14 +99,14 @@
 13         *      *       *     *     17      30      0
 13         *      *       *     *     20      30      0
 //==========================================================>
-// BOSS Đế Quân =>>	Thời Gian
-//Index   Year   Month   Day   DoW   Giờ    Phút    Second
+// 帝君Boss =>>	时间
+//Index   Year   Month   Day   DoW   时    分    Second
 14         *      *      *     *     05      00       0
 14         *      *      *     *     11      00       0
 14         *      *      *     *     16      30       0
 14         *      *      *     *     23      00       0
 //================================================================>
-//Thần Địa Ngục
+//地狱之神
 15        *      *       *     *     00      30      0
 15        *      *       *     *     06      00      0
 15        *      *       *     *     12      00      0
@@ -120,69 +120,69 @@ end
 
 1	// Messenger Invasion
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-0         		189              	190                 *         			*           		1800					3			"Thanh Long Tái Thế"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+0         		189              	190                 *         			*           		1800					3			"青龙再世"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-1         		190              	192                	*          		   	*           		1800					3			"Triệu Long Võ Tôn"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+1         		190              	192                	*          		   	*           		1800					3			"召龙武尊"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-2        		193               	924                	*          			*          			1800					3			"Boss Vàng"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+2        		193               	924                	*          			*          			1800					3			"黄金Boss"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-3          		200              	201                 *          		   	*        	  		1800					3			"Ma Thần"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+3          		200              	201                 *          		   	*        	  		1800					3			"魔神"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-4         		212             	213                	*          			*           		1800					3			"Tử Thần Xương Sọ"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+4         		212             	213                	*          			*           		1800					3			"死神骷髅"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-5         		220              	221                	*          			*           		480						3			"Thỏ Ngọc"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+5         		220              	221                	*          			*           		480						3			"玉兔"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-6         		216              	217                	*          			*           		1800					3			"Kỵ Sỹ Hắc Ám"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+6         		216              	217                	*          			*           		1800					3			"黑暗骑士"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-7         		187              	188                	*          			*           		900						3			"Quỷ Vương"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+7         		187              	188                	*          			*           		900						3			"鬼王"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
 8         		218              	219                	*          			*           		1800					3			"KunDun" 
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-9         		222              	223                	*          			*           		1800					3			"Siêu Boss" 
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+9         		222              	223                	*          			*           		1800					3			"超级Boss" 
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-10         		194             	925                	*          			*           		1800					3			"Boss Nhện" 
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+10         		194             	925                	*          			*           		1800					3			"蜘蛛Boss" 
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-11         		195              	926                	*          			*           		1800					3			"Kiếm Vương" 
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+11         		195              	926                	*          			*           		1800					3			"剑王" 
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-12         		196              	927                	*          			*           		1800					3			"Ma Sói" 
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+12         		196              	927                	*          			*           		1800					3			"魔狼" 
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-13         		214              	215                	*          			*           		1800					3			"Rồng Đỏ" 
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+13         		214              	215                	*          			*           		1800					3			"红龙" 
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-14         		199              	928                	*          			*           		1800					3			"Chiến Thần" 
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+14         		199              	928                	*          			*           		1800					3			"战神" 
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
-15         		929              	930                	*          			*           		1800					3			"Đế Quân"
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
+15         		929              	930                	*          			*           		1800					3			"帝君"
 //=================================================================================================================================================>
-//Index	  Sự Kiện Bắt Đầu	 Thống Báo Hết Time      Boss Index		  Thông Báo Giết Boss	 Thời Gian Biến Mất 	 AlarmTime 		Event Name
+//Index	  事件开始	 倒计时通知      Boss索引		  击杀Boss通知	 时间 消失 	 报警时间 		事件名称
 16         		931              	932                	*          			*           		1800					3			"Lord Of Darkness" 
 end                                                                                                         
 
 2 // Map Invasion
 //Index   Group   Map   Value
-//Sự Kiện Thanh Long Tái Thế
+//事件 青龙再世
 0         0       37     0	
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Triệu Long Võ Tôn
+// 召龙武尊事件
 1         0       57     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Boss Vang 
+// 事件 黄金Boss 
 2          0       0     0	
 2          1       0     0	
 2          2       0     0	
@@ -204,59 +204,59 @@ end
 2          18      0     0	
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Ma Thần
+// 魔神事件
 3         0       10     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Vua Xương
+// 事件 骷髅王
 4         0       00     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Thỏ Ngọc
+// 事件 玉兔
 5         0       04    0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Kỵ Sỹ Hắc Am
+// 事件 黑暗骑士
 6         0       34    0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Quy Vuong
+// 事件 鬼王
 7         0       33     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Thần Forest
+// 事件 森林之神
 8         0       33     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Siêu Boss
+// 事件 超级Boss
 9         0       02     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Boss Class
+// 事件 Boss Class
 10         0       42     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Đệ Nhất Kiếm Ma
+// 事件 第一剑魔
 11         0       02     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện King Wolf
+// 事件 狼王
 12         0       37     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Rồng Đỏ
+// 事件 红龙
 13         0       03     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Chiến Thần
+// 事件 战神
 14         0       51     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Đế Quân
+// 事件 帝君
 15         0       07     0
 //================================================================>
 //Index   Group   Map   Value
-// Sự Kiện Lord Of Darkness
+// 事件 Lord Of Darkness
 16         0       56     0
 
 end
@@ -265,15 +265,15 @@ end
 3	// Monster Invasion
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Thanh Long Tái Thế
+//事件 青龙再世
 0         0       	   802             0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Triệu Long Võ Tôn
+//召龙武尊事件
 1         0       		804             0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Boss Vang
+//事件 黄金Boss
 2         0       43             0           0
 2         0       44             0           0
 2         0       53             0           0
@@ -296,62 +296,62 @@ end
 2         0       502            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Ma Thần
+//魔神事件
 3         0       811            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Vua Xương
+//事件 骷髅王
 4         0       55            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Thỏ Ngọc
+//事件 玉兔
 5         0       413             1           300
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Kỵ Sĩ Hắc Ám
+//事件 黑暗骑士
 6         0       803            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện QuyVuong
+//事件 鬼王
 7         0       309            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Kundun
+//事件 昆顿
 8         0       275            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Đại Chiến Siêu Boss
+//超Boss大战事件
 9		  0		  904            0			0
 9		  0		  905            0			0
 9		  0		  907            0			0			
 9		  0		  561            0			0 			
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Boss Nhện
+//事件 蜘蛛Boss
 10        0       906            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Đệ Nhất Kiếm Ma
+//事件 第一剑魔
 11         0       801            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện King Wolf
+//事件 狼王
 12         0       806            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Rồng Đỏ
+//事件 红龙
 13         0       42            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Chiến Thần
+//事件 战神
 14         0       807            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Đế Quân
+//事件 帝君
 15         0       809            0           0
 //================================================================>
 //Index   Group   MonsterClass   RegenType   RegenTime
-//Sự Kiện Lord Of Darkness
+//事件 Lord Of Darkness
 16         0       810            0           0
 
 end

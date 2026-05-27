@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<!--
 //=========================================================================================================================================
-//== NumberEvent = ID ở trước tên Sự Kiện trên màn hình của GameServer (VD : 60. Huyết Lâu, thì nếu muốn lấy time Huyết Lâu THì NumberEvent là 60)
-//==NameEvent = Tên Event hiển thị ở bảng H trong Game
-//==DesString = Nội dung mô tả ví dụ : All Sub, hoặc sub 1,2 tuỳ
-//==NumberGate = Gate Number dùng để dịch chuyển tới vị trí Event, nếu Event nào không sử dụng move thì để -1
+//== NumberEvent = GameServer 屏幕上事件名称前的 ID（例如：60.血楼，如果要获取血楼时间则 NumberEvent 为 60）
+//== NameEvent = 游戏中 H 表显示的事件名称
+//== DesString = 描述内容，例如：All Sub，或 sub 1、2 等
+//== NumberGate = 用于传送到事件位置的门编号，如果事件不使用移动则设为 -1
 //=========================================================================================================================================
 -->
 <CustomEventTime Enable="1" >
-	<Event NumberEvent="60"	NameEvent="Huyết Lâu" 			DesString="Davias" 			NumberGate="800" />
-	<Event NumberEvent="61"	NameEvent="Q.Trường Quỷ" 		DesString="Noria" 			NumberGate="801" />
-	<Event NumberEvent="62"	NameEvent="Hỗn Nguyên Lầu"  	DesString="Lorencia" 		NumberGate="802" />
-	<Event NumberEvent="72"	NameEvent="CTC Mini" 			DesString="Lorencia" 		NumberGate="803" />
-	<Event NumberEvent="73"	NameEvent="Loạn Chiến" 			DesString="Lorencia" 		NumberGate="805" />
-	<Event NumberEvent="0"	NameEvent="Rồng Thiêng" 	    DesString="Kantru 3" 		NumberGate="807" />
-	<Event NumberEvent="1"	NameEvent="Triệu Long Võ Tôn"  	DesString="Rakion" 			NumberGate="808" />
-	<Event NumberEvent="2"	NameEvent="Boss Vàng"  			DesString="Lorencia" 		NumberGate="809" />
-	<Event NumberEvent="3"	NameEvent="Ma Thần"  			DesString="Icarus" 			NumberGate="810" />
-	<Event NumberEvent="4"	NameEvent="Tử Thần Xương Sọ"  	DesString="Lorencia" 		NumberGate="811" />
-	<Event NumberEvent="5"	NameEvent="Thỏ Ngọc"  			DesString="LostTower" 		NumberGate="812" />
-	<Event NumberEvent="6"	NameEvent="Kỵ Sĩ Hắc Ám"  		DesString="Crywolf" 		NumberGate="813" />
-	<Event NumberEvent="7"	NameEvent="Quỷ Vương"  			DesString="Aida" 			NumberGate="814" />
-	<Event NumberEvent="8"	NameEvent="Kun Dun"  		    DesString="Aida" 			NumberGate="815" />
-	<Event NumberEvent="9"	NameEvent="Đại Chiến Siêu Boss"	DesString="Davias" 			NumberGate="816" />
-	<Event NumberEvent="10"	NameEvent="Boss Nhện"  		    DesString="Refuge" 			NumberGate="817" />
-	<Event NumberEvent="11"	NameEvent="Kiếm Vương "  	    DesString="Davias" 			NumberGate="818" />
-	<Event NumberEvent="12"	NameEvent="Ma Sói"  			DesString="Kantru 3" 		NumberGate="819" />
-	<Event NumberEvent="13"	NameEvent="Rồng Đỏ"  			DesString="Noria" 			NumberGate="820" />
-	<Event NumberEvent="14"	NameEvent="Chiến Thần"  		DesString="Elbeland3" 		NumberGate="821" />
-	<Event NumberEvent="15"	NameEvent="Đế Quân"  			DesString="Atlan3" 			NumberGate="822" />
-	<Event NumberEvent="16"	NameEvent="Lord Of Darkness"  	DesString="SwapLand" 		NumberGate="823" />
+	<Event NumberEvent="60"	NameEvent="血楼" 			DesString="冰风谷" 			NumberGate="800" />
+	<Event NumberEvent="61"	NameEvent="鬼广场" 		DesString="诺丽亚" 			NumberGate="801" />
+	<Event NumberEvent="62"	NameEvent="混沌楼"  		DesString="罗伦西亚" 		NumberGate="802" />
+	<Event NumberEvent="72"	NameEvent="迷你 CTC" 		DesString="罗伦西亚" 		NumberGate="803" />
+	<Event NumberEvent="73"	NameEvent="乱战" 			DesString="罗伦西亚" 		NumberGate="805" />
+	<Event NumberEvent="0"	NameEvent="圣龙" 	        DesString="坎特鲁 3" 		NumberGate="807" />
+	<Event NumberEvent="1"	NameEvent="赵云武尊"  		DesString="拉克里昂" 			NumberGate="808" />
+	<Event NumberEvent="2"	NameEvent="黄金 BOSS"  		DesString="罗伦西亚" 		NumberGate="809" />
+	<Event NumberEvent="3"	NameEvent="魔神"  			DesString="伊卡洛斯" 			NumberGate="810" />
+	<Event NumberEvent="4"	NameEvent="骷髅死神"  		DesString="罗伦西亚" 		NumberGate="811" />
+	<Event NumberEvent="5"	NameEvent="玉兔"  			DesString="失落之塔" 		NumberGate="812" />
+	<Event NumberEvent="6"	NameEvent="暗黑骑士"  		DesString="狼堡" 		NumberGate="813" />
+	<Event NumberEvent="7"	NameEvent="鬼王"  			DesString="艾达" 			NumberGate="814" />
+	<Event NumberEvent="8"	NameEvent="昆顿"  		    DesString="艾达" 			NumberGate="815" />
+	<Event NumberEvent="9"	NameEvent="超级 BOSS 大战"	DesString="冰风谷" 			NumberGate="816" />
+	<Event NumberEvent="10"	NameEvent="蜘蛛 BOSS"  		    DesString="避难所" 			NumberGate="817" />
+	<Event NumberEvent="11"	NameEvent="剑王"  	        DesString="冰风谷" 			NumberGate="818" />
+	<Event NumberEvent="12"	NameEvent="狼魔"  			DesString="坎特鲁 3" 		NumberGate="819" />
+	<Event NumberEvent="13"	NameEvent="红龙"  			DesString="诺丽亚" 			NumberGate="820" />
+	<Event NumberEvent="14"	NameEvent="战神"  		DesString="艾贝兰 3" 		NumberGate="821" />
+	<Event NumberEvent="15"	NameEvent="帝君"  			DesString="亚特兰 3" 			NumberGate="822" />
+	<Event NumberEvent="16"	NameEvent="黑暗领主"  	DesString="沼泽之地" 		NumberGate="823" />
 
 
 </CustomEventTime>

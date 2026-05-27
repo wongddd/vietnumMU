@@ -4,26 +4,26 @@
 end
 
 1
-//Index   Name                                 DropMap   DropX   DropY   DropRange   AlarmTime   EventTime
-0         "Drop de itens"                  		0         145     135     10           5           3
+//Index   Name                                 掉落地图   掉落X   掉落Y   掉落范围   提醒时间   活动时间
+0         "物品掉落"                  		0         145     135     10           5           3
 end
 
 2
-//Index   ItemIndex   ItemLevel   DropCount   DropDelay   Comment
-0         6159        0           5           00          //Jewel of Chaos
-0         6159        0           5           10          //Jewel of Chaos
-0         6159        0           5           20          //Jewel of Chaos
-0         7181        0           2           30          //Jewel of Bless
-0         7182        0           2           40          //Jewel of Soul
-0         7184        0           5           60          //Jewel of Life
-0         7184        0           5           70          //Jewel of Life
-0         7184        0           5           80          //Jewel of Life
-0         7184        0           5           90         //Jewel of Life
-0         7184        0           5           100         //Jewel of Life
-0         7179        8           5           110         //Box of Kundun 1
-0         7179        9           5           120         //Box of Kundun 2
-0         7179        10          5           130         //Box of Kundun 3
-0         7179        10          5           140         //Box of Kundun 3
-0         7179        11          5           150         //Box of Kundun 4
-0         7179        12          3           160         //Box of Kundun 5
+//Index   ItemIndex   ItemLevel   DropCount   DropDelay   备注
+0         6159        0           5           00          //混沌之石
+0         6159        0           5           10          //混沌之石
+0         6159        0           5           20          //混沌之石
+0         7181        0           2           30          //祝福宝石
+0         7182        0           2           40          //灵魂宝石
+0         7184        0           5           60          //生命宝石
+0         7184        0           5           70          //生命宝石
+0         7184        0           5           80          //生命宝石
+0         7184        0           5           90         //生命宝石
+0         7184        0           5           100         //生命宝石
+0         7179        8           5           110         //昆顿箱子 1
+0         7179        9           5           120         //昆顿箱子 2
+0         7179        10          5           130         //昆顿箱子 3
+0         7179        10          5           140         //昆顿箱子 3
+0         7179        11          5           150         //昆顿箱子 4
+0         7179        12          3           160         //昆顿箱子 5
 end

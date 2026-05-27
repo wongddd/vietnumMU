@@ -1,4 +1,4 @@
-//==Tỷ Lệ ra + Level đồ
+//==装备等级概率
 0
 //Index   Rate0   Rate1   Rate2   Rate3   Rate4   Rate5   Rate6   Rate7   Rate8   Rate9   Rate10   Rate11   Rate12   Rate13   Rate14   Rate15   Comment
 0         7000    1500    1000    500     0       0       0       0       0       0       0        0        0        0        0        0        //Level Option (Common)
@@ -51,7 +51,7 @@
 52        0       0       0       0       0       0       0       0       0       0       0        0        2500     2500     2500     2500     //Level Option (EventItemBag) (12~15)
 53        0       0       0       0       0       0       0       0       0       0       0        0        0        3334     3333     3333     //Level Option (EventItemBag) (13~15)
 end
-//==Tỷ lệ Ra skill đồ
+//==装备技能概率
 1
 //Index   Rate0   Rate1   Comment
 0         9400    600     //Skill Option (Common)
@@ -64,7 +64,7 @@ end
 12        0       10000   //Skill Option (EventItemBag) (1)
 13        5000    5000    //Skill Option (EventItemBag) (0~1)
 end
-//===Tỷ lệ ra Luck
+//===幸运概率
 2
 //Index   Rate0   Rate1   Comment
 0         9600    400     //Luck Option (Common)
@@ -82,7 +82,7 @@ end
 12        0       10000   //Luck Option (EventItemBag) (1)
 13        5000    5000    //Luck Option (EventItemBag) (0~1)
 end
-//== Tỷ lệ ra Option (Life)
+//== 附加生命概率
 3
 //Index   Rate0   Rate1   Rate2   Rate3   Rate4   Rate5   Rate6   Rate7   Comment
 0         9600    150     100     50      0       0       0       0       //JoL Option (Common)
@@ -117,7 +117,7 @@ end
 30        0       0       0       0       0       3334    3333    3333    //JoL Option (EventItemBag) (5~7)
 31        0       0       0       0       0       0       5000    5000    //JoL Option (EventItemBag) (6~7)
 end
-//== Tỷ Lệ Ra Dòng Exc
+//== 卓越属性概率
 4
 //Index   Rate0   Rate1   Rate2   Rate3   Rate4   Rate5   Rate6   Comment
 0         10000   0       0       0       0       0       0       //Exc Option (Common)
@@ -150,7 +150,7 @@ end
 28        0       0       0       0       0       5000    5000    //Exc Option (EventItemBag) (5~6)
 end
 
-//=== Tỷ Lệ Ra đồ Thần
+//=== 圣装概率
 5
 //Index   Rate0   Rate1   Rate2   Comment
 0         10000   0       0       //Set Option (Common)
@@ -164,7 +164,7 @@ end
 14        0       5000    5000    //Set Option (EventItemBag) (1~2)
 end
 
-//== Tỷ lệ ra SOcket
+//== 镶嵌概率
 6
 //Index   Rate0   Rate1   Rate2   Rate3   Rate4   Rate5   Comment
 0         10000   0       0       0       0       0       //Socket Option (Common)

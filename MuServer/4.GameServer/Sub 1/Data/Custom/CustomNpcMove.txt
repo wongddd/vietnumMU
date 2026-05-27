@@ -1,4 +1,4 @@
 //Index   Npc	NpcMap	NpcX	NpcY	MoveMap	MoveX	MoveY	MinLevel	MaxLevel	MinReset	MaxReset	MinMReset	MaxMReset	AccountLevel	PKMove	Comment
-0         602	0	126	143	40	237	235	10		*		*		*		*		*		0		1	//Move To Silent Teste
-1         603	0	128	143	30	87	213	50		*		*		*		*		*		0		1	//Move To Devias Teste
+0         602	0	126	143	40	237	235	10		*		*		*		*		*		0		1	//移动到寂静沼泽 测试
+1         603	0	128	143	30	87	213	50		*		*		*		*		*		0		1	//移动到冰风谷 测试
 end

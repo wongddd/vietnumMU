@@ -1,8 +1,8 @@
 <BotThuMua EnableBot="true">
 	<!--
-		EnableBot		: true = mở
-		: false = tắt
-		Index Bot		: Số thứ tự của Bot ( bắt đàu từ 0 )
+		EnableBot		: true = 开启
+		: false = 关闭
+		Index Bot		: 机器人序号（从 0 开始）
 		ClassBot		: 0,1,2	    DW,SM,GM
 		: 16,17,18	DK,BK,BM
 		: 32,33,34	Elf,ME,HE
@@ -10,20 +10,20 @@
 		: 64,65,66	DL,LE
 		: 80,81,82	SU,BS,DS
 		: 97,98     RF,FM
-		SucessRateBot	: Tỷ lệ đổi thành công
-		Type 			: 0: DoiItem : Áo, Quần, Mũ, Tay, Chân, Vũ Khí, Khiên 
-						  1: IDoiItemList: Đổi Item theo list).
-		NameBot			: Tên bot
-		IDMapBot		: ID Map bot đứng
-		CoordXBot		: Toạ độ X của Map
-		CoordYBot		: Toạ độ Y của Map
-		DirBot			: Hướng Bot quay mặt
+		SucessRateBot	: 兑换成功率
+		Type 			: 0: 兑换物品：衣服、裤子、帽子、手套、鞋子、武器、盾牌
+					  1: 按列表兑换物品
+		NameBot			: 机器人名称
+		IDMapBot		: 机器人所在地图 ID
+		CoordXBot		: 地图 X 坐标
+		CoordYBot		: 地图 Y 坐标
+		DirBot			: 机器人面向方向
 	-->
 	<CreateBot>
-		<NewBot	IndexBot="0"	ClassBot="17"	SucessRateBot="100"	Type="2"	NameBot="ThuMuaEx"	IDMapBot="0"	CoordXBot="131"	CoordYBot="137"	DirBot="2" />
+		<NewBot	IndexBot="0"	ClassBot="17"	SucessRateBot="100"	Type="2"	NameBot="收購Ex"	IDMapBot="0"	CoordXBot="131"	CoordYBot="137"	DirBot="2" />
 	</CreateBot>
 	<!--
-		SlotItemBot		:{1 Weapon, 2 Helm, 3 Amor, Pants, 5 Gloves, 6 Boots, 7 Wings, 8 Pet}
+		SlotItemBot		:{1 武器, 2 头盔, 3 盔甲, 4 裤子, 5 手套, 6 靴子, 7 翅膀, 8 宠物}
 	-->
 	<ItemBot>
 		<ItemsBot	IndexBot="0"	SlotItemBot="1"	TypeItemBot="5"		IndexItemBot="10"	LevelItemBot="13"	OptionItemBot="4"/>
@@ -33,44 +33,44 @@
 		<ItemsBot	IndexBot="0"	SlotItemBot="5"	TypeItemBot="10"	IndexItemBot="3"	LevelItemBot="13"	OptionItemBot="4"/>
 		<ItemsBot	IndexBot="0"	SlotItemBot="6"	TypeItemBot="11"	IndexItemBot="3"	LevelItemBot="13"	OptionItemBot="4"/>
 		<ItemsBot	IndexBot="0"	SlotItemBot="7"	TypeItemBot="12"	IndexItemBot="4"	LevelItemBot="13"	OptionItemBot="4"/>
-		
+
 	</ItemBot>
-	
+
 	<!--
-		DoiItem 			: Đổi item theo list ( CreateBot | Type = 0 )
-		Đổi item			: Áo, Quần, Mũ, Tay, Chân, Vũ Khí, Khiên
-		LoaiTien			: 0 = Zen, 1 Wcoin , 2 WcoinP, 3 GobinCoin
-		MinCoin ~ MaxCoin	: Coin sẽ nhận được randon trong khoảng này (Nếu muốn coin mặc định thì set min, max bằng nhau)
-		SeriCheck 			: 1 thì chỉ nhận các item có seri
-		ItemExc= "1"			: Item phải là đồ ex mới cho phép đổi
-		ItemAnc= "1"		: Item phải là đồ thần mới cho phép đổi
-		AddPoin= "1"		: Công thêm poin khi đổi đồ thành công (-1 tắt)
-		ItemBag= "1"		: Tặng đồ khi đổi đồ ex (-1 tắt) (Tính theo số lần đổi)
+		DoiItem 			: 按列表兑换物品（CreateBot | Type = 0）
+		兑换物品			: 衣服、裤子、帽子、手套、鞋子、武器、盾牌
+		LoaiTien			: 0 = Zen, 1 Wcoin, 2 WcoinP, 3 GoblinPoint
+		MinCoin ~ MaxCoin	: 在此范围内随机获得硬币（如需固定硬币，则设置最小值和最大值相同）
+		SeriCheck 			: 1 则仅接受有序号的物品
+		ItemExc= "1"		: 物品必须是卓越才允许兑换
+		ItemAnc= "1"		: 物品必须是属性才允许兑换
+		AddPoin= "1"		: 兑换成功时增加积分（-1 关闭）
+		ItemBag= "1"		: 兑换卓越物品时赠送物品（-1 关闭）（按兑换次数计算）
 	-->
 	<DoiItem>
-		<OpBot IndexBot="0" OnlyVip="0" LoaiTien="1" MinCoin="500" MaxCoin="1000" SeriCheck= "1"  ItemExc="1"  ItemAnc= "0" ItemBag="-1" />	
+		<OpBot IndexBot="0" OnlyVip="0" LoaiTien="1" MinCoin="500" MaxCoin="1000" SeriCheck= "1"  ItemExc="1"  ItemAnc= "0" ItemBag="-1" />
 	</DoiItem>
 	<!--
-		DoiItemList 		: Đổi item theo list ( CreateBot | Type = 1 )
-		ItemIndex 			: Mã Item cho phép đổi
-		LoaiTien 			: 0 = Zen, 1 Wcoin , 2 WcoinP, 3 GobinCoin
-		MinCoin ~ MaxCoin	: Coin nhận được random trong khoảng này
-		SeriCheck 			: 1 thì chỉ nhận các item có seri (Check trong TitanEdit)
-		AddPoin= "1"		: Công thêm poin khi đổi đồ thành công (-1 tắt)
-		ItemBag= "1"		: Tặng đồ khi đổi đồ ex (-1 tắt)
-	-->	
+		DoiItemList 		: 按列表兑换物品（CreateBot | Type = 1）
+		ItemIndex 			: 允许兑换的物品代码
+		LoaiTien 			: 0 = Zen, 1 Wcoin, 2 WcoinP, 3 GoblinPoint
+		MinCoin ~ MaxCoin	: 在此范围内随机获得硬币
+		SeriCheck 			: 1 则仅接受有序号的物品（在 TitanEdit 中检查）
+		AddPoin= "1"		: 兑换成功时增加积分（-1 关闭）
+		ItemBag= "1"		: 兑换卓越物品时赠送物品（-1 关闭）
+	-->
 	<DoiItemList>
 		<ListItem IndexBot="0" ItemIndex="6159" LoaiTien="1" MinCoin="50" MaxCoin="100" SeriCheck= "1" ItemBag="-1" />
 		<ListItem IndexBot="0" ItemIndex="7190" LoaiTien="1" MinCoin="10" MaxCoin="50" SeriCheck= "1" ItemBag="-1" />
-	</DoiItemList>	
-	
-	<!--LƯU Ý: CHỈ LOAD BOT KHI KHÔNG CÒN AI TRADE, NẾU KHÔNG SẼ BỊ TREO CỬA SỔ TRADE CỦA NHÂN VẬT ĐÓ-->	
+	</DoiItemList>
+
+	<!--注意：只有在没有玩家交易时才加载机器人，否则会导致该角色的交易窗口卡住-->
 	<MessageInfo>
-		<Message Index="0" Text="[ThuMua]Đổi item thành công" />
-		<Message Index="1" Text="[ThuMua]Đổi item thất bại" />
-		<Message Index="2" Text="[ThuMua]Bạn không phải VIP" />
-		<Message Index="3" Text="[ThuMua]Item không hợp lệ" />
-		<Message Index="4" Text="[ThuMua]Tôi đã sẵn sàng" />
-		<Message Index="5" Text="[ThuMua]Không tìm thấy thông tin bot Index" />
-	</MessageInfo>	
+		<Message Index="0" Text="[收購]物品兑换成功" />
+		<Message Index="1" Text="[收購]物品兑换失败" />
+		<Message Index="2" Text="[收購]您不是 VIP" />
+		<Message Index="3" Text="[收購]物品无效" />
+		<Message Index="4" Text="[收購]我已准备好" />
+		<Message Index="5" Text="[收購]未找到机器人索引信息" />
+	</MessageInfo>
 </BotThuMua>

@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NPC>
-	<!-- PREMIUM VERSION 	-->
-	<!-- Config 	-->
+	<!-- 高级版本 	-->
+	<!-- 配置 	-->
 	<SetNPC  NPCClass="601" NPCMap="0" NPCX="130" NPCY = "121" NPCDir="3"/>
 </NPC>
 
 <MessageInfo>
-	<Message Index="0" Text="[Cộng Hưởng] Bạn cần có %d WCoin để sử thực hiện" />
-	<Message Index="1" Text="[Cộng Hưởng] Bạn cần có %d WCoinP để sử thực hiện" />
-	<Message Index="2" Text="[Cộng Hưởng] Bạn cần có %d GobinP để sử thực hiện" />
-	<Message Index="3" Text="[Cộng Hưởng] Bạn cần lấy phôi ra trước" />
-	<Message Index="4" Text="[Cộng Hưởng] Item sử dụng không phù hợp" />
-	<Message Index="5" Text="[Cộng Hưởng] Vui lòng dùng phôi trong danh sách" />
-	<Message Index="6" Text="[Cộng Hưởng] Vui lòng bỏ thêm Phôi để Cộng Hưởng" />
-	<Message Index="7" Text="[Cộng Hưởng] Chúc mừng, bạn vừa cộng hưởng thành công" />
-	<Message Index="8" Text="[Cộng Hưởng] Ohh, tiếc quá bạn đã thất bại rồi!" />
-	<Message Index="9" Text="[Cộng Hưởng] Item của bạn đã đạt mức tối đa !" />
-</MessageInfo>	
-	
+	<Message Index="0" Text="[共鸣]你需要 %d WCoin 才能执行此操作" />
+	<Message Index="1" Text="[共鸣]你需要 %d WCoinP 才能执行此操作" />
+	<Message Index="2" Text="[共鸣]你需要 %d GobinP 才能执行此操作" />
+	<Message Index="3" Text="[共鸣]请先取出胚子" />
+	<Message Index="4" Text="[共鸣]使用的物品不合适" />
+	<Message Index="5" Text="[共鸣]请使用列表中的胚子" />
+	<Message Index="6" Text="[共鸣]请添加更多胚子进行共鸣" />
+	<Message Index="7" Text="[共鸣]恭喜，你共鸣成功" />
+	<Message Index="8" Text="[共鸣]哦，太可惜了，你失败了！" />
+	<Message Index="9" Text="[共鸣]你的物品已达到最大等级！" />
+</MessageInfo>
+
 <CongHuongItem>
 	<Config  Enabled = "1"/>
-	<!-- Cấu hình cộng hướng		
-		- CHReset : Resset > CHReset mới được CH
-		- CHLuck,CHSkill,CHLevel =  1 thì sẽ cho phép cộng hướng luck,skill,level của phôi sang Item chính
-		- CHCheckPhoiType 
-				= 0 không check item phôi miễn là exc và cùng loại (VD Kiếm vs Kiếm)
-				= 1 thì sẽ bắt buộc phôi cộng hưởng là item có cấp độ bằng hoặc cao hơn item chính (cấp độ item)
-				= 2 bắt buộc phôi phải là item giống item chính (VD "Kiếm Rồng" vs "Kiếm Rồng")
+	<!-- 共鸣配置
+		- CHReset : 重置次数 > CHReset 才能进行共鸣
+		- CHLuck,CHSkill,CHLevel = 1 允许将胚子的幸运/技能/等级共鸣到主物品
+		- CHCheckPhoiType
+				= 0 不检查胚子类型，只需是同类型卓越物品（如剑对剑）
+				= 1 要求胚子等级必须等于或高于主物品（物品等级）
+				= 2 要求胚子必须与主物品完全相同（如"龙骨剑"对"龙骨剑"）
 
-		- Type là cấu hình tỷ lệ cộng hướng thành công, có thể thêm nhiều type để đặt điều kiện ở mỗi mốc lvl hoặc dòng exc
-		  VD : Item chính có + Lv > LvMin && < LvMax, Số dòng Exc > ExcMin && < ExcMax thì tỷ lệ thành công = CHRate,
-		- nếu cho phép CHLevel =1 thì CH thành công item sẽ cộng tối đa thêm CHLevelMax.. (VD item chính level 5 phôi 15, cộng hưởng thành công item sẽ lên level +8 (vì CHLevelMax = 3)
-		  CHLevelMax = 0 thì sẽ cộng hưởng +level của phôi sang
-		  WC= WCoin, WCP = WCoinP, GBP = GobinPoint
-		- CHKeepItem = 1 (Giữ lại item phôi sau khi cộng hưởng)
-		- CHAllowAnc = 1 Cho Phep cong huong item THan
+		- Type 是共鸣成功率配置，可以添加多个 type 来设置不同条件
+		  例如：主物品 +Lv > LvMin && < LvMax,卓越行数 > ExcMin && < ExcMax 则成功率 = CHRate
+		- 如果允许 CHLevel=1，共鸣成功后物品最多增加 CHLevelMax 级
+		  CHLevelMax = 0 则会继承胚子的等级加成
+		  WC=WCoin, WCP=WCoinP, GBP=GobinPoint
+		- CHKeepItem = 1 (保留胚子物品)
+		- CHAllowAnc = 1 允许共鸣卓越物品
 	-->
 	<CHConifg CHReset = "0" CHLuck= "1" CHSkill = "0" CHLevel="0" CHOptLife= "0"  CHCheckPhoiType= "1" CHKeepItem="1" CHAllowAnc="0" >
-	
+
 		<Type LvMin="0"  LvMax="15"  ExcMin="1" ExcMax="63" CHLevelMax = "1"  WC="10000" 	WCP="0" 	GBP="0" 	CHRate="30"/>
 
-		
+
 	</CHConifg>
 </CongHuongItem>

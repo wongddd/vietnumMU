@@ -1,4 +1,4 @@
-// Add new wings to chaos goblin mix (Mix wing level 3)
+// 将新翅膀添加到混沌合成中 (3级翅膀合成)
 0
 //	Category 	Index
 

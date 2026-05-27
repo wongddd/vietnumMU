@@ -1,0 +1,39 @@
+越南语→中文 翻译修复日志
+========================
+日期: 2026-05-27
+
+概述:
+将 MuServer\4.GameServer\Sub 1\Data\ 目录下的所有游戏配置文件从越南语翻译为中文。
+共修改 256 个文件，约 7900 行更改。
+
+翻译范围:
+--------
+1. Item\Item.txt - 1284 个物品名翻译（武器/防具/首饰/翅膀/技能书等）
+2. Item\ItemOptionBEx.xml - 套装选项定义 + 1321 行缩写注释 + 106 行配置说明
+3. Item\SetItemType.txt - 528 行套装类型注释
+4. Item\ItemOption.txt / ItemOptionRate.txt / ItemDrop.txt / ItemMove.txt / SetItemOption.txt
+5. Monster\Monster.txt - 14 个Boss名
+6. Monster\MonsterSetBase.txt - 怪物/NPC 注释 + 配置说明
+7. Shop\ - 26 个NPC商店文件
+8. EventItemBag\ - 170 个事件物品掉落包文件
+9. Event\InvasionManager.dat - 事件名称/配置头
+10. Event\LoanChien.dat / MuCastleData.dat
+11. Move\Gate.txt - 21 个传送门名称
+12. Util\Notice.txt - 5 条公告
+13. Util\ResetTable.xml / ResetTableVIP.xml - 重置配置说明
+14. Custom\* - 所有自定义系统配置
+15. CashShop\* - 商城配置
+16. Command.txt / Message.txt / MapManager.txt / EventItemBagManager.txt
+
+处理方式:
+--------
+1. 全名直译: 对越语语序（名词+修饰语）的物品使用完整映射表
+2. 词边界替换: 对中文语序（修饰语+名词）的物品使用正则词边界替换
+3. 缩写映射: 对套装选项缩写（Tăng PT/GST/HP/ST等）使用映射表
+4. 配置说明: 对开发者配置注释也进行了翻译（//注释保留）
+
+保留的越南语:
+-----------
+- 作者签名 "DUY ĐẠT" 和 "Zalo: ..."（EventItemBag 等文件）
+- CashShop 头注释 "Chỉnh sửa Cash Shop"
+- MapManager.txt 中 "Tân Nát" 作者昵称

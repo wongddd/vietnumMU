@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Config Điểm cho quái , dùng để tính bxh săn boss trong custom ranking type 9
-	điểm sẽ add vào DiemMonter ở Character , nên xóa định kỳ sau khi tổng kết top
+	怪物点数配置，用于自定义排名 type 9 中的猎杀 BOSS 排行榜
+	点数将添加到角色的 DiemMonter 字段，应在总结排名后定期清除
 -->
-<CustomMonterPoint Enable="1" Notice="1" Text="Bạn vừa được cộng %d điểm KillBoss !" >
+<CustomMonterPoint Enable="1" Notice="1" Text="你刚刚获得了 %d 点猎杀 BOSS 积分！" >
 	<Monter ClassMin="43 " ClassMax="43"  PointAdd="1" />
 	<Monter ClassMin="53 " ClassMax="44"  PointAdd="5" />
 	<Monter ClassMin="54 " ClassMax="53"  PointAdd="1" />
@@ -25,7 +25,7 @@
 	<Monter ClassMin="501" ClassMax="501"  PointAdd="5" />
 	<Monter ClassMin="501" ClassMax="502"  PointAdd="1" />
 
-	
+
 	<Monter ClassMin="42"  ClassMax="42"   PointAdd="5" />
 	<Monter ClassMin="55"  ClassMax="55"   PointAdd="5" />
 	<Monter ClassMin="135" ClassMax="135"  PointAdd="5" />

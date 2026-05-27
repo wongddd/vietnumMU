@@ -4,6 +4,6 @@
 end
 1
 //Section	Type	MinLevel   MaxLevel   Skill   Luck   Option   Excellent
-//Đồ Item Custom Tim Bạc
+//银心定制装备
 
 end

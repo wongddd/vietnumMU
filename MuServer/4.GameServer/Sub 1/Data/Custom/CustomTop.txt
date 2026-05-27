@@ -1,6 +1,6 @@
-//Sistema que mostra os tops dentro do jogo
-//Ver procedure WZ_CustomTop de acordo com o index
+//游戏中显示排行的系统
+//根据索引查看存储过程 WZ_CustomTop
 
 //Index	Command	Title
-1	"rr"	"TOP RR"
-2	"mr"	"TOP MR"
+1	"rr"	"TOP 重置"
+2	"mr"	"TOP 大师重置"

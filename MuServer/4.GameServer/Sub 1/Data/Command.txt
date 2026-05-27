@@ -1,6 +1,6 @@
 //=================================================================================================================
 //-- Commands Configuration
-//-- Organiza��o by Smiley
+//-- 由 Smiley 组织
 //=================================================================================================================
 //  Index  	->  Index of command
 //  Command 	->  Command Name
@@ -22,90 +22,90 @@
 //==================================================================================================================================================================================================================================================================================================================================================================================================================================
 //      #Index	#Command	#Enable->	AL0	AL1	AL2	AL3	#Money->	AL0	AL1	AL2	AL3	#MinLevel->	AL0	AL1	AL2	AL3	#MaxLevel->	AL0	AL1	AL2	AL3	#MinReset->	AL0	AL1	AL2	AL3	 #MaxReset->	AL0	AL1	AL2	AL3		#Delay	#GameMaster	#WC	#WP	#GP	#Description
 //==================================================================================================================================================================================================================================================================================================================================================================================================================================
-	0    "/move"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//move <Map> 			- Move to a map
-	1    "/post"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//Post <Msg>			- Post a message in global chat
-	2    "/addstr"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//s <points>			- Add points in Str
-	3    "/addagi"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//a <points>			- Add points in Agi
-	4    "/addvit"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//v <points>			- Add points in Vit
-	5    "/addene"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//e <points>			- Add points in Ene
-	6    "/addcmd"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//c <points>			- Add points in Com
-	7    "/pkclear"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//pk				- Clear PK
-	8    "/zen"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//zen <value>			- Add zen 
-	9    "/nv2"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//evo				- Evolve char class
-	10   "/bau"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//bau <num>			- Change warehouse
-	11   "/reset"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//reset |auto|			- Reset character
-	12   "/gmm"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//gmmove <Name> <Map> <X> <Y>	- Move a player
-	13   "/gmp"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//gmpost <Msg>			- Send global message
-	14   "/track"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//track <Name> 			- Go to player
-	15   "/trace"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//trace <Name>			- Bring a player
-	16   "/disconnect"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//disconnect <Name>		- Disconnect Player
-	17   "/fireworks"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//fireworks			- Start Fireworks
-	18   "/make"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//make <Group> <item> <level> <skill> <luck> <option> <exe> <set> <socket>
-	19   "/skin"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//skin <name> <skin>		- Change player skin
-	20   "/setmoney"    		1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//setmoney <name> <value>	- Change player zen
-	21   "/notice"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//notice <msg>			- Send msg to all servers
-	22   "/mreset"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//mreset			- Master reset
-	23   "/war"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//war <guild>			- Challenge another guild
-	24   "/soccer"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//soccer <guild>		- Challenge another guild to battle soccer
-	25   "/re"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//re |on| |off| |auto|		- Resquest system
-	26   "/hide"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//hidden			- hidden gm
-	27   "/rei"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//rei				- Seize throne in king of mu event
-	28	 "/xoado"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//limparinv			- Clear inventory
-	29   "/setvip"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//setvip <account> <type> <days>- Add vip to a account
-	30 	 "/marry"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//marry to <player>		- Marry to a player
-	31 	 "/abrirbau"		  	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//abrirbau			- Open warehouse
-	32 	 "/classe"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//classe <type>			- Change character class
-	33 	 "/premiar"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//reward <name> <type> <value>  - Reward a player	
-	34 	 "/premiarall"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0 	//rewardall <type> <value>	- Reward all players
-	35 	 "/reload"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//reload <type>			- Reload config
-	36 	 "/banchar"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//banchar <player>		- Ban character
-	37 	 "/banacc"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//banacc <account>		- Ban account
-	38 	 "/mudarnome"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//mudarnome			- Change character name
-	39 	 "/veloz"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//veloz				- Start Quickly event
-	40 	 "/info"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0 	//info <player>			- Character status 
-	41	 "/abrirevento"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//abrirevento			- Open event
-	42	 "/participar"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//participar			- Join in event
-	43	 "/pegapega"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//pegapega			- Start Run and Catch event
-	44	 "/queroir"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//queroir			- Go to Run and Catch event
-	45	 "/escesc"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//escesc			- Start Hide and Seek event
-	46   "/makeset"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//makeset <item> <level> <skill> <luck> <option> <exe> <set> <socket>
-	47   "/drop"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0   0		0	2		0	0	0	//drop <Group> <item> <level> <skill> <luck> <option> <exe> <set> <socket>
-	48   "/quest"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//quest				- Quest Command
-	49	 "/presente"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//presente			- Gift command
-	50	 "/roletarussa"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//roletarussa			- Start Russian Roullete event
-	51	 "/top"				    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//top <type>			- Show top player 
-	52	 "/taydiem"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//readd				- ReAdd stats
-	53	 "/resp"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//resp	<msg>			- Quiz event 
-	54   "/pick"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//pick <type>			- Auto get itens
-	55   "/ajuda"				1	1	1	1			0	0	0	0			0	0	0	0			200	200	200	200			0	0	0	0			0	0	0	0		0	0		0	0	0	//ajuda				- Summon help
-	56   "/taymaster"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//remaster			- ReAdd Master Skill Tree
-	57   "/startbc"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//startbc			- Start Blood Castle event
-	58   "/startds"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//startds			- Start Devil Square event
-	59   "/startcc"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//startcc			- Start Chaos Castle event
-	60   "/startit"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//startit			- Start Illus.Temple event
-	61   "/offpvp"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//offpvp			- Disable Pvp
-	62   "/lock"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//lock <password>		- Block Itens Move
-	63   "/unlock"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//unlock <password>		- Desbloc Itens Move
-	64   "/store"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//store <type>			- Open Custom Store
-	65   "/offstore"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//offstore			- Open Custom Store Offline
-	66   "/attack"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//attack <skill> <buff>		- Start Custom Attack
-	67   "/offattack"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//attack			- Start Custom Attack Offline
-	68   "/moveall"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//moveall <map><x><y>		- Move all players to ...
-	69   "/moveguild"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//moveguild <guild><map><x><y>	- Move all guild to ...
-	70	 "/pvp"				    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//pvp				- Start PvP Event
-	71	 "/matamata"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//killall			- Start Kill All Event
-	72	 "/starttvt"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//starttvt				- Start Team vs Team Event
-	73	 "/spot"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//spot <monster> <qtd>		- Summon monsters
-	74	 "/wc"			    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//setcoin <Char> <Coin> <Value>	- Command for add or remove coins
-	75	 "/pack"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//pack <Type> <Qtd>		- Command for pack jewels
-	76	 "/unpack"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//unpack <Type> <Qtd>		- Command for unpack jewels
-	77	 "/startquiz"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startquiz			- Start Quiz Event
-	78	 "/startdrop"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startdrop			- Start Drop Event
-	79	 "/startking"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startking			- Start King of MU Event
-	80	 "/startinvasion"		1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startinvasion	<index>		- Start Invasion
-	81	 "/startarena"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startarena <index>		- Start Custom Arena
-	82	 "/setpass"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//setpass <pass>		- setpass pt
-	83	 "/gml"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//Tang Level 	: /gml TenNhanVat XXX
-	84	 "/gmrs"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//Tang Reset 	: /gmrs TenNhanVat XXX
+	0    "/move"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//move <地图> 			- 移动到地图
+	1    "/post"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//Post <消息>			- 在世界聊天中发布消息
+	2    "/addstr"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//s <点数>			- 增加力量点数
+	3    "/addagi"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//a <点数>			- 增加敏捷点数
+	4    "/addvit"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//v <点数>			- 增加体力点数
+	5    "/addene"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//e <点数>			- 增加能量点数
+	6    "/addcmd"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//c <点数>			- 增加统率点数
+	7    "/pkclear"		    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//pk				- 清除 PK
+	8    "/zen"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//zen <数值>			- 增加 Zen 
+	9    "/nv2"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//evo				- 转职
+	10   "/bau"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//bau <编号>			- 切换仓库
+	11   "/reset"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//reset |auto|			- 重置角色
+	12   "/gmm"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//gmmove <名称> <地图> <X> <Y>	- 移动玩家
+	13   "/gmp"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//gmpost <消息>			- 发送全局消息
+	14   "/track"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//track <名称> 			- 前往玩家
+	15   "/trace"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//trace <名称>			- 拉取玩家
+	16   "/disconnect"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//disconnect <名称>		- 断开玩家连接
+	17   "/fireworks"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//fireworks			- 开始放烟花
+	18   "/make"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//make <组> <物品> <等级> <技能> <幸运> <属性> <卓越> <套装> <孔>
+	19   "/skin"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//skin <名称> <皮肤>		- 改变玩家皮肤
+	20   "/setmoney"    		1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//setmoney <名称> <数值>	- 改变玩家 Zen
+	21   "/notice"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//notice <消息>			- 向所有服务器发送消息
+	22   "/mreset"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//mreset			- 大师重置
+	23   "/war"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//war <战盟>			- 挑战其他战盟
+	24   "/soccer"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//soccer <战盟>		- 挑战其他战盟进行足球赛
+	25   "/re"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//re |on| |off| |auto|		- 请求系统
+	26   "/hide"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//hidden			- 隐藏 GM
+	27   "/rei"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//rei				- 在 MU 之王中夺取王座
+	28	 "/xoado"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//limparinv			- 清理背包
+	29   "/setvip"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//setvip <账号> <类型> <天数>- 为账户添加 VIP
+	30 	 "/marry"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//marry to <玩家>		- 与玩家结婚
+	31 	 "/abrirbau"		  	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//abrirbau			- 打开仓库
+	32 	 "/classe"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//classe <类型>			- 更改角色职业
+	33 	 "/premiar"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//reward <名称> <类型> <数值>  - 奖励玩家
+	34 	 "/premiarall"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0 	//rewardall <类型> <数值>	- 奖励所有玩家
+	35 	 "/reload"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//reload <类型>			- 重新加载配置
+	36 	 "/banchar"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//banchar <玩家>		- 封禁角色
+	37 	 "/banacc"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//banacc <账号>		- 封禁账户
+	38 	 "/mudarnome"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//mudarnome			- 更改角色名称
+	39 	 "/veloz"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//veloz				- 开始极速活动
+	40 	 "/info"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0 	//info <玩家>			- 角色状态
+	41	 "/abrirevento"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//abrirevento			- 开启活动
+	42	 "/participar"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//participar			- 参加活动
+	43	 "/pegapega"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//pegapega			- 开始追捕活动
+	44	 "/queroir"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//queroir			- 前往追捕活动
+	45	 "/escesc"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//escesc			- 开始捉迷藏活动
+	46   "/makeset"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//makeset <物品> <等级> <技能> <幸运> <属性> <卓越> <套装> <孔>
+	47   "/drop"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0   0		0	2		0	0	0	//drop <组> <物品> <等级> <技能> <幸运> <属性> <卓越> <套装> <孔>
+	48   "/quest"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//quest				- 任务命令
+	49	 "/presente"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//presente			- 礼物命令
+	50	 "/roletarussa"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//roletarussa			- 开始俄罗斯轮盘活动
+	51	 "/top"				    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//top <类型>			- 显示排行榜
+	52	 "/taydiem"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//readd				- 重新分配属性
+	53	 "/resp"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//resp	<消息>			- 问答活动
+	54   "/pick"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//pick <类型>			- 自动拾取物品
+	55   "/ajuda"				1	1	1	1			0	0	0	0			0	0	0	0			200	200	200	200			0	0	0	0			0	0	0	0		0	0		0	0	0	//ajuda				- 召唤帮助
+	56   "/taymaster"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//remaster			- 重置大师技能树
+	57   "/startbc"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//startbc			- 开始血色城堡活动
+	58   "/startds"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//startds			- 开始恶魔广场活动
+	59   "/startcc"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//startcc			- 开始混沌城堡活动
+	60   "/startit"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//startit			- 开始幻影寺院活动
+	61   "/offpvp"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//offpvp			- 关闭 PvP
+	62   "/lock"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//lock <密码>		- 锁定物品移动
+	63   "/unlock"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//unlock <密码>		- 解锁物品移动
+	64   "/store"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//store <类型>			- 打开自定义商店
+	65   "/offstore"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//offstore			- 打开离线商店
+	66   "/attack"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//attack <技能> <增益>		- 开始自定义攻击
+	67   "/offattack"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//attack			- 开始离线自定义攻击
+	68   "/moveall"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//moveall <地图><x><y>		- 移动所有玩家到...
+	69   "/moveguild"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//moveguild <战盟><地图><x><y>	- 移动整个战盟到...
+	70	 "/pvp"				    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//pvp				- 开始 PvP 活动
+	71	 "/matamata"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//killall			- 开始杀戮活动
+	72	 "/starttvt"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//starttvt				- 开始团队战活动
+	73	 "/spot"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//spot <怪物> <数量>		- 召唤怪物
+	74	 "/wc"			    	1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	2		0	0	0	//setcoin <角色> <代币> <数值>	- 添加或移除代币
+	75	 "/pack"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//pack <类型> <数量>		- 打包宝石
+	76	 "/unpack"			    1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//unpack <类型> <数量>		- 解包宝石
+	77	 "/startquiz"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startquiz			- 开始问答活动
+	78	 "/startdrop"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startdrop			- 开始掉落活动
+	79	 "/startking"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startking			- 开始 MU 之王活动
+	80	 "/startinvasion"		1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startinvasion	<索引>		- 开始入侵
+	81	 "/startarena"			1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//startarena <索引>		- 开始自定义竞技场
+	82	 "/setpass"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	0		0	0	0	//setpass <密码>		- 设置密码
+	83	 "/gml"					1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//提升等级 	: /gml 角色名 XXX
+	84	 "/gmrs"				1	1	1	1			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0			0	0	0	0		0	1		0	0	0	//提升重置 	: /gmrs 角色名 XXX
 
 end

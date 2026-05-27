@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MessageInfo>
-	<Message Index="9" Text="Xui cho bạn vì mất tiền ngu !" />
-	<Message Index="10" Text="[Huỷ Exc]Item sử dụng không phù hợp!" />
-	<Message Index="11" Text="[Huỷ Exc]Trạng thái không hợp lệ, hãy thao tác lại!" />
-	<Message Index="12" Text="[Huỷ Exc]Yêu Cầu: " />
-	<Message Index="13" Text="[Huỷ Exc]Bạn cần có %d WCoin để sử thực hiện" />
-	<Message Index="14" Text="[Huỷ Exc]Bạn cần có %d WCoinP để sử thực hiện" />
-	<Message Index="15" Text="[Huỷ Exc]Bạn cần có %d GobinP để sử thực hiện" />	
-</MessageInfo>	
+	<Message Index="9" Text="真倒霉，白白损失了钱！" />
+	<Message Index="10" Text="[删除卓越]使用的物品不合适！" />
+	<Message Index="11" Text="[删除卓越]状态无效，请重新操作！" />
+	<Message Index="12" Text="[删除卓越]要求：" />
+	<Message Index="13" Text="[删除卓越]你需要 %d WCoin 才能执行此操作" />
+	<Message Index="14" Text="[删除卓越]你需要 %d WCoinP 才能执行此操作" />
+	<Message Index="15" Text="[删除卓越]你需要 %d GobinP 才能执行此操作" />
+</MessageInfo>
 
 <HuyExc>
 	<Config  Enabled="1"/>
-	<!-- Chú Thích
-		- HExcRS : cần đạt RS mới có thể sử dụng chức năng này
-		- HExcLvMin ~ HExcLvMax : (Level+) của Item có thể sử dụng huỷ item
-		- HExcSkill : -1 (Không Check) , 1 (Có Skill mới đc huỷ exc) , 0 (là item không có skill mới dùng đc huỷ exc)
-		- HExcLuck : Tương tự skill ở trên
-		
-		Type Config giá tiền tương ứng dòng Exc muốn huỷ
+	<!-- 注释
+		- HExcRS : 需要达到的转生次数才能使用此功能
+		- HExcLvMin ~ HExcLvMax : 可以使用删除功能的物品等级(+)
+		- HExcSkill : -1 (不检查), 1 (必须有技能才能删除卓越), 0 (没有技能才能删除卓越)
+		- HExcLuck : 与技能类似
+
+		Type 配置对应要删除的卓越属性行价格
 		//========================================================================//
 		//========================================================================//
-		- ExcOpt="0" (Gồm Các Dòng Dưới)
-		"Tăng lượng Zen rơi ra +30%%"
-		"Phục hồi Mana khi giết quái vật +Mana/8"	
+		- ExcOpt="0" (包含以下属性行)
+		"增加金币掉落量 +30%%"
+		"击杀怪物时回复魔力 +魔力/8"
 		//=============================
 		//=============================
-		- ExcOpt="1" (Gồm Các Dòng Dưới)
-		"Khả năng tránh đòn +10%%"
-		"Phục hồi HP khi giết quái vật +HP/8"	
+		- ExcOpt="1" (包含以下属性行)
+		"回避率 +10%%"
+		"击杀怪物时回复HP +HP/8"
 		//=============================
 		//=============================
-		- ExcOpt="2" 4 (Gồm Các Dòng Dưới)
-		"Phản hồi +5%% lực tấn công"
-		"Gia tăng tốc độ tấn công +%d"	
-		//=============================		
-		//=============================		
-		- ExcOpt="3 8 (Gồm Các Dòng Dưới)
-		"Giảm sức sát thương +4%%"
-		"Gia tăng sức sát thương +%d%%"
-		"Sức sát thương phép thuật +%d%%"		
-		//=============================		
-		//=============================		
-		- ExcOpt="4" 16(Gồm Các Dòng Dưới)
-		"Gia tăng Lượng Mana lên +4%%"
-		"Gia tăng sức tấn công +cấp độ/20"
-		"Gia tăng phép thuật +cấp độ/20"		
+		- ExcOpt="2" 4 (包含以下属性行)
+		"反弹 +5%% 攻击力"
+		"攻击速度增加 +%d"
 		//=============================
 		//=============================
-		- ExcOpt="5" 32(Gồm Các Dòng Dưới)
-		"Gia tăng Lượng HP lên +4%%"
-		"Tăng tỉ lệ sát thương hoàn hảo +10%%"		
+		- ExcOpt="3 8 (包含以下属性行)
+		"伤害减少 +4%%"
+		"伤害增加 +%d%%"
+		"魔法伤害增加 +%d%%"
+		//=============================
+		//=============================
+		- ExcOpt="4" 16(包含以下属性行)
+		"魔力增加 +4%%"
+		"攻击力增加 +等级/20"
+		"魔法力增加 +等级/20"
+		//=============================
+		//=============================
+		- ExcOpt="5" 32(包含以下属性行)
+		"HP增加 +4%%"
+		"完美一击概率 +10%%"
 		//========================================================================//
-		//========================================================================//		
+		//========================================================================//
 	-->
 	<HuyExcConfig HExcRS="-1" HExcLvMin="0" HExcLvMax="15" HExcSkill="-1" HExcLuck="-1">
 		<Type ExcOpt="0" 	WC="500000" 	WCP="0" GBP="0" Rate="100" />

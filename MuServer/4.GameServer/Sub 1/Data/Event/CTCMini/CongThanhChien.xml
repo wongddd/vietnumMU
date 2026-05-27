@@ -1,32 +1,32 @@
 <CTCMini>
-    <!-- Time Event -->
+    <!-- 活动时间 -->
 	<EventTime>
         <Time Year="-1" Month="-1" Day="-1" DayOfWeek="1" Hour="22" Minute="00" Second="-1" />
 	</EventTime>
-	<!-- Config -->
+	<!-- 配置 -->
 	<NPCTalk>
         <NPC Class="546" Map="0" X="143" Y="139" />
 	</NPCTalk>	
-	<!-- Config -->
+	<!-- 配置 -->
 	<CauHinhTime>
 	    <Config  Enabled="1" TimeChuanBi = "2"	TimeSuKien = "30"  SoTruCanChiem="2" GuildMinPlayer="1"/>
 	</CauHinhTime>
-	<!-- Config -->
+	<!-- 配置 -->
 	<CauHinhGate>
 	    <Config Gate1="835" Gate2 = "836"	Gate3 = "837"  Gate4="838" Gate5="839"/>
 	</CauHinhGate>	
 	<!-- Bonus 
-		BonusAllGuild : Thuong toan Guild hoac chi nhan vat 
-		IndexItemBag : Index trong Eventitembag de drop item
+		BonusAllGuild : 奖励整个战盟或个人 
+		IndexItemBag : Eventitembag 中掉落物品的索引
 	-->
 	<PhaCong>
 	    <Config	WCoin="2000" WCoinP="0"  GobinP="0" Ruud="1" BonusAllGuild="0" />
     </PhaCong>	
-	<!-- Config -->
+	<!-- 配置 -->
 	<PhaTru>
 	    <Config	WCoin="2000" WCoinP="0"  GobinP="0" Ruud="1" BonusAllGuild="0" />
     </PhaTru>
-	<!-- Config -->
+	<!-- 配置 -->
 	<GuidWin>
 	    <Config	WCoin="2000" WCoinP="0"  GobinP="0" Ruud="1" IndexItemBag="0" />
     </GuidWin>		

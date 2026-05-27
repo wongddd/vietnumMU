@@ -1,11 +1,11 @@
 //=================================================================================================================
-//-- Desenvolvido por louis - www.jogandomu.com.br
-//-- Sistema que realiza um sorteio entre todos os us�rios online, dropando itens ao vencedor
-//-- Sorteio realizado de acordo com os hor�rios e pr�mios abaixo
+//-- 开发 by louis - www.jogandomu.com.br
+//-- 在线抽奖系统，在所有在线玩家中抽奖，向获胜者掉落物品
+//-- 根据以下时间和奖品进行抽奖
 //=================================================================================================================
-// Obs: Se voc� inciar o evento pelo menu do GS o valor do pr�mio ser� referente ao index 0. 
+// 注意: 如果通过 GS 菜单启动活动，奖品值将对应索引 0。
 //=================================================================================================================
-// O drop do item � de acordo com o Event item bag Lottery.txt
+// 物品掉落根据 Event item bag Lottery.txt
 //=================================================================================================================
 
 0
@@ -14,12 +14,12 @@
 end
 
 1
-//Index   Name                                 DropMap      AlarmTime
-0         "Sorteio Online"                     0            5            
+//Index   Name                                 掉落地图      提醒时间
+0         "在线抽奖"                             0            5
 end
 
-//Reward 
+//奖励
 2
-//Index   	WC	WP	GP 
-0		10	0	0		
+//Index   	WC	WP	GP
+0		10	0	0
 end

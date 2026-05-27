@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MessageInfo>
-	<Message Index="0" Text="[ResetVIP]Bạn không đủ %d (%s) để Reset" />
-	<Message Index="1" Text="[ResetVIP]Cần có x%d (%s) để thực hiện Reset!" />
-	<Message Index="2" Text="Bạn cần sử dụng Code Reset để Reset lần %d!" />
-	<Message Index="3" Text="Nhân vật [%s] vừa Reset V.I.P lần %d thành công!" />
+	<Message Index="0" Text="[ResetVIP]你没有足够的%d(%s)来重置" />
+	<Message Index="1" Text="[ResetVIP]需要x%d(%s)来执行重置！" />
+	<Message Index="2" Text="你需要使用重置码来进行第%d次重置！" />
+	<Message Index="3" Text="角色 [%s] 刚刚成功 V.I.P 重置第 %d 次！" />
 </MessageInfo>	
 
 
 <!--Test
-	Lưu ý: Item yêu cầu cần để trong thùng đồ nhân vật!
+	注意: 所需物品需放在角色背包中！
 	
-	SL = XX (Thấp nhất 1)
+	数量 = XX (最低 1)
 	IndexItem = Item
-	Level = -1 thì không check
-	ExlOp1 = -1 thì không check
+	等级 = -1 则不检查
+	卓越属性1 = -1 则不检查
 -->
 <ResetTableVIP Enable="1" Notice="3"> 
 	<!--TypeReset
-		; 0 = Giữ poin không cộng PointReset
-		; 1 = Reset theo Table TẨY Poin đã cộng +PointReset
-		; 2 = Reset theo Table GIỮ Poin đã cộng	+PointReset
+		; 0 = 保留点数不增加 PointReset
+		; 1 = 按表重置已加点数 +PointReset*重置次数
+		; 2 = 按表保留已加点数 +PointReset
 	-->
 	<Reset MinReset="1"	MaxReset="400" > <!-- Moc Reset-->
 		<LevelReset Level_AL0="250"   Level_AL1="250"   Level_AL2="250"   Level_AL3="250"/> <!--- Level Yeu Cau Khi Reset THeo Type VIP-->
-		<PointReset Point_AL0="300"	  Point_AL1="300"	    Point_AL2="300"	  Point_AL3="300"/> <!--- Point Nhận được theo Mốc Reset-->
+		<PointReset Point_AL0="300"	  Point_AL1="300"	    Point_AL2="300"	  Point_AL3="300"/> <!--- 按重置里程碑获得点数-->
 		<NguyenLieu Zen="1000000" WC="5000" WP ="0" GP="0" CheckCode="0" > <!--Item Nguyen Lieu Toi da 5 Item-->
 			 <!--<Item SL="0"  IndexItem="0"  Level="0"  ExlOp="0" /> <!--Ngoc Hon Nguyen-->
 			<!--Item SL="0"  IndexItem="0"  Level="0"  ExlOp="0" /> <!--Thien Tu kiem Level 5 Exl 3-->

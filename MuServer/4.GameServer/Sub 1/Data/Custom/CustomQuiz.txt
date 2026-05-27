@@ -1,5 +1,5 @@
 //=================================================================================================================
-// Custom Auto Quiz System
+// 自定义自动问答系统
 //=================================================================================================================
 0
 //Index   Year   Month   Day   DoW   Hour   Minute   Second
@@ -7,36 +7,36 @@
 end
 
 1
-//Index   Name                       AlarmTime   EventTime
-0         "Quiz"                        3           3
+//Index   Name                       提醒时间   活动时间
+0         "问答活动"                        3           3
 end
 
 
 //=================================================================================================================
-// Questions
+// 问题
 //=================================================================================================================
-//  ID  	->  Question ID
-//  WC 		->  Premia��o em WCoinC
-//  WP      	->  Premia��o em WCoinP
-//  GP      	->  Premia��o em Goblin Point
-//  Question   	->  Pergunta
-//  Answer   	->  Resposta
+//  ID  	->  问题ID
+//  WC 		->  WCoinC奖励
+//  WP      	->  WCoinP奖励
+//  GP      	->  Goblin Point奖励
+//  Question   	->  问题
+//  Answer   	->  答案
 //=================================================================================================================
-// Obs: Evite usar respostas que possuem acentos. 
+// 注意: 避免在答案中使用带重音符号的字符。
 //=================================================================================================================
 //=================================================================================================================
-//       #ID     #WC     #WP	 #GP         #Question				      		        #Answer		 
+//       #ID     #WC     #WP	 #GP         #Question				      		        #Answer
 //=================================================================================================================
 2
-	  0      10       0       0	     "Cidade Maravilhosa?"					"Rio de Janeiro"	
-	  1      10       0       0	     "10+2x2?"							"14"
-	  2      10       0       0	     "Qual o site do jogo?"					"www.seusite.com"
-	  3      10       0       0	     "Um dos maiores cientistas do mundo?"			"Albert Einstein"
-	  4      10       0       0	     "Quantas vezes o Brasil foi campe�o mundial(futebol)?"	"5"
-	  5      10       0       0	     "Em que ano foi lan�ado o jogo Mu Online?"			"2003"
-	  6      10       0       0	     "Qual o nick exato do ADM do jogo?"			"TesteADM"
-	  7      10       0       0	     "Qual o nome exato do servidor?"				"Seu Servidor"
-	  8      10       0       0	     "Quando um jogador � novato, qual nome lhe damos?"		"Noob"
-	  9      10       0       0	     "Quantos estados tem o Brasil?"				"26"
-	  10     10       0       0	     "Em que continente fica localizada a It�lia?"		"Continente Europeu"
+		  0      10       0       0	     "奇迹MU是什么类型的游戏？"					"MMORPG"
+		  1      10       0       0	     "10+2x2=?"							"14"
+		  2      10       0       0	     "游戏官网是什么？"					"www.seusite.com"
+		  3      10       0       0	     "世界上最伟大的科学家之一？"			"爱因斯坦"
+		  4      10       0       0	     "巴西获得过几次世界杯冠军？"			"5"
+		  5      10       0       0	     "MU Online是哪一年发布的？"			"2003"
+		  6      10       0       0	     "游戏管理员的角色名是什么？"			"TesteADM"
+		  7      10       0       0	     "服务器的确切名称是什么？"				"Seu Servidor"
+		  8      10       0       0	     "新玩家通常被称为什么？"				"新手"
+		  9      10       0       0	     "巴西有多少个州？"					"26"
+		  10     10       0       0	     "意大利位于哪个洲？"				"欧洲"
 end

@@ -5,15 +5,15 @@ end
 
 1
 //State		StartDay	StartHour	StartMinute
-1	  		0 	     	0	         0	    //Bắt đầu cho đăng ký CTC
-2	  		0 	     	17	         10	    //Kết thúc đăng k
-3	  		0 	     	17	         12	    //Bắt đầu nộp Rena
-4	  		0 	     	17	         14	    //Kết thúc nộp Rena
-5	  		0 	     	17	         16	    //Công bố kết quả
-6	  		0 	     	17	         18	    //Kết thúc công bố
-7	  		0 	     	17	         20	    //Bắt đầu cuộc chiến
-8	  		0 	     	17	         25	    //Kết thúc cuộc chiến
-9	  		7 	     	0	         0	    //Kết thúc sự kiện (tự động reset về 1) và bắt đầu cho sự kiện mới
+1	  		0 	     	0	         0	    //开始允许注册CTC
+2	  		0 	     	17	         10	    //结束注册
+3	  		0 	     	17	         12	    //开始提交Rena
+4	  		0 	     	17	         14	    //结束提交Rena
+5	  		0 	     	17	         16	    //公布结果
+6	  		0 	     	17	         18	    //公布结束
+7	  		0 	     	17	         20	    //开始战斗
+8	  		0 	     	17	         25	    //结束战斗
+9	  		7 	     	0	         0	    //事件结束(自动重置为1)并开始新事件
 end
 
 2

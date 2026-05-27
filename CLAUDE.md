@@ -347,3 +347,4 @@ ItemManager/*.txt (物品/翅膀/首饰/皮肤/提示)
 - The GameServer `Data/` folder mirrors runtime structure — map terrain, monster spawns, shops, item bags, quest data
 - GetMainInfo 项目是配置供应链核心，将服务器文本配置编译为客户端可读的 XOR 加密二进制
 - **Main.exe 调试**: 客户端可执行文件位于 `E:\MU\ClientFile\Main.exe`，配合 `config.ini` 及 `Data/Local/` 下的 CBGetMain.bin/CBTextInfo.bin/License.json 运行。调试时需确保 ConnectServer 已启动并可连接
+- **编译后复制**: 每次编译完成后，将 `ClientFile\Main.exe` 复制到 `\\ALENANDAMINA\Photos\MU\`

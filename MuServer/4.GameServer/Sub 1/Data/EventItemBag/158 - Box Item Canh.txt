@@ -4,12 +4,12 @@
 end
 1
 //Section	Type	MinLevel   MaxLevel   Skill   Luck   Option   Excellent
-12           156		0          0          0       0      0        0		100	//Siêu Cánh Cusotm 1
-12           157		0          0          0       0      0        0		100	//Siêu Cánh Cusotm 2
-12           158		0          0          0       0      0        0		100	//Siêu Cánh Cusotm 3
-12           159		0          0          0       0      0        0		100	//Siêu Cánh Cusotm 4
-12           160		0          0          0       0      0        0		100	//Siêu Cánh Cusotm 5
-12           161		0          0          0       0      0        0		100	//Siêu Cánh Cusotm 6
-12           162		0          0          0       0      0        0		100	//Siêu Cánh Cusotm 7
+12           156		0          0          0       0      0        0		100	//超级定制翅膀 1
+12           157		0          0          0       0      0        0		100	//超级定制翅膀 2
+12           158		0          0          0       0      0        0		100	//超级定制翅膀 3
+12           159		0          0          0       0      0        0		100	//超级定制翅膀 4
+12           160		0          0          0       0      0        0		100	//超级定制翅膀 5
+12           161		0          0          0       0      0        0		100	//超级定制翅膀 6
+12           162		0          0          0       0      0        0		100	//超级定制翅膀 7
 
 end
