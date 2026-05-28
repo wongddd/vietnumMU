@@ -76,7 +76,7 @@ BOOL ProtocolCoreEx(BYTE head, BYTE* lpMsg, int size, int key) // OK
 			if (gCB_GetMixRate) gCB_GetMixRate->GCRecvMixInfo(lpMsg, size);
 			break;
 #endif
-		case 0xD7:
+		case 0x11:
 			GCDamageRecv((PMSG_DAMAGE_RECV*)lpMsg);
 			break;
 		case 0x16:
