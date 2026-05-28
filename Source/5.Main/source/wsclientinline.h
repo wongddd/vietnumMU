@@ -21,10 +21,10 @@ extern ItemAddOptioninfo*			g_pItemAddOptioninfo;
 #include "Utilities\Log\DebugAngel.h" 
 #include "PacketManager.h"
 
-#define PACKET_MOVE         0xD4
-#define PACKET_POSITION     0x15
-#define PACKET_MAGIC_ATTACK 0xDB
-#define PACKET_ATTACK       0x11
+#define PACKET_MOVE         0xD9
+#define PACKET_POSITION     0xD0
+#define PACKET_MAGIC_ATTACK 0x1D
+#define PACKET_ATTACK       0xD7
 
 extern CWsctlc SocketClient;
 extern CSimpleModulus g_SimpleModulusCS;
