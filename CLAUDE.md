@@ -81,11 +81,11 @@ GAMESERVER_UPDATE=803  // Season 8
 | 4+ | 自定义预留 | — |
 
 **当前设定**：
-- `Release_EX603` → 必须使用 `GAMESERVER_LANGUAGE=3`（匹配中文客户端）
+- `Release_EX603` → 使用 `GAMESERVER_LANGUAGE=1`（国际服协议，客户端需同步对应协议码）
 - `Release_EX803` → 使用 `GAMESERVER_LANGUAGE=1`（国际服）
 - `Release_EX401` → 使用 `GAMESERVER_LANGUAGE=0`（旧版）
 
-> **注意**：Release_EX603 配置在 `.vcxproj` 中默认为 `GAMESERVER_LANGUAGE=1`，若对接中文客户端需改为 `3`。否则客户端发送的 0xD9/0xD7 等协议头无法被服务器识别。
+> **注意**：若对接中文客户端（0xD9/0xD7/0xD0/0x1D 协议码），需改为 `GAMESERVER_LANGUAGE=3`。当前设为 `1` 表示使用国际协议码（0xD4/0x11/0x15/0xDB），客户端 `wsclientinline.h` 的 `PACKET_*` 宏需与服务端匹配。
 
 ---
 
