@@ -1,4 +1,4 @@
-// CTCMini.cpp: Evento CTC Mini by CuongBeo
+﻿// CTCMini.cpp: Evento CTC Mini by CuongBeo
 //
 //////////////////////////////////////////////////////////////////////
 
@@ -1022,7 +1022,7 @@ void CBossGuild::StartBossChienBinh() // OK
 
 void CBossGuild::StartBossTienNu() // OK
 {
-	LogAdd(LOG_RED, "[BossGuild] Start Boss Tiên Nữ");
+	LogAdd(LOG_RED, "[BossGuild] Start Boss Tien Nu");
 	int qtd = 1;
 	qtd = (qtd > 0) ? qtd : 1;
 	for (int n = 0; n < qtd; n++)
@@ -1191,7 +1191,7 @@ void CBossGuild::StartBossDauSi() // OK
 
 void CBossGuild::StartBossChuaTe() // OK
 {
-	LogAdd(LOG_RED, "[BossGuild] Start Boss Chúa Tể");
+	LogAdd(LOG_RED, "[BossGuild] Start Boss Chua Te");
 	int qtd = 1;
 	qtd = (qtd > 0) ? qtd : 1;
 	for (int n = 0; n < qtd; n++)
@@ -1361,7 +1361,7 @@ bool CBossGuild::MonsterDie(int aIndexMonster, int aIndexUser)
 			DGGuildScoreUpdate1(lpUser->Guild->Name, lpUser->Guild->TotalScore1);
 		}
 
-		gNotice.GCNoticeSendToAll(0, 0, 0, 0, 0, 0, "[BossGuild] Guild %s đã tiêu diệt Boss Tiên Nữ", lpUser->GuildName, (lpUser->GuildNumber, lpUser->Index));
+		gNotice.GCNoticeSendToAll(0, 0, 0, 0, 0, 0, "[BossGuild] Guild %s da tieu diet Boss Tien Nu", lpUser->GuildName, (lpUser->GuildNumber, lpUser->Index));
 
 		GDSetCoinSend(lpUser->Index, +(BossTienNu.WCoin), +(BossTienNu.WCoinP), +(BossTienNu.GobinP), "BossTienNu");
 		gCashShop.CGCashShopPointRecv(lpUser->Index);
@@ -1463,7 +1463,7 @@ bool CBossGuild::MonsterDie(int aIndexMonster, int aIndexUser)
 			DGGuildScoreUpdate1(lpUser->Guild->Name, lpUser->Guild->TotalScore1);
 		}
 
-		gNotice.GCNoticeSendToAll(0, 0, 0, 0, 0, 0, "[BossGuild] Guild %s đã tiêu diệt Boss Chúa Tể", lpUser->GuildName, (lpUser->GuildNumber, lpUser->Index));
+		gNotice.GCNoticeSendToAll(0, 0, 0, 0, 0, 0, "[BossGuild] Guild %s da tieu diet Boss Chua Te", lpUser->GuildName, (lpUser->GuildNumber, lpUser->Index));
 
 		GDSetCoinSend(lpUser->Index, +(BossChuaTe.WCoin), +(BossChuaTe.WCoinP), +(BossChuaTe.GobinP), "BossChuaTe");
 		gCashShop.CGCashShopPointRecv(lpUser->Index);

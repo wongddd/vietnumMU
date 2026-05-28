@@ -155,7 +155,7 @@ struct SDHP_CHARACTER_CREATE_RECV
 	PBMSG_HEAD header; // C1:02
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE Class;
 };
 
@@ -164,7 +164,7 @@ struct SDHP_CHARACTER_DELETE_RECV
 	PBMSG_HEAD header; // C1:03
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE guild;
 	char GuildName[9];
 };
@@ -174,7 +174,7 @@ struct SDHP_CHARACTER_INFO_RECV
 	PBMSG_HEAD header; // C1:04
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 };
 
 struct SDHP_CREATE_ITEM_RECV
@@ -206,7 +206,7 @@ struct SDHP_OPTION_DATA_RECV
 	PBMSG_HEAD header; // C1:08
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 };
 
 struct SDHP_PET_ITEM_INFO_RECV
@@ -229,7 +229,7 @@ struct SDHP_CHARACTER_NAME_CHECK_RECV
 	PBMSG_HEAD header; // C1:0A
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 };
 
 struct SDHP_CHARACTER_NAME_CHANGE_RECV
@@ -237,8 +237,8 @@ struct SDHP_CHARACTER_NAME_CHANGE_RECV
 	PBMSG_HEAD header; // C1:0B
 	WORD index;
 	char account[11];
-	char OldName[11];
-	char NewName[11];
+	char OldName[14];
+	char NewName[14];
 };
 
 struct SDHP_CRYWOLF_SYNC_RECV
@@ -260,7 +260,7 @@ struct SDHP_GLOBAL_POST_RECV
 	PBMSG_HEAD header; // C1:20
 	WORD MapServerGroup;
 	BYTE type;
-	char name[11];
+	char name[14];
 	char message[60];
 };
 
@@ -282,7 +282,7 @@ struct SDHP_SNS_DATA_RECV
 	PBMSG_HEAD header; // C1:24
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 };
 
 struct SDHP_CHARACTER_INFO_SAVE_RECV
@@ -290,7 +290,7 @@ struct SDHP_CHARACTER_INFO_SAVE_RECV
 	PWMSG_HEAD header; // C2:30
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	WORD Level;
 	BYTE Class;
 	DWORD LevelUpPoint;
@@ -351,7 +351,7 @@ struct SDHP_INVENTORY_ITEM_SAVE_RECV
 	PWMSG_HEAD header; // C2:31
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE Inventory[INVENTORY_SIZE][16];
 };
 
@@ -360,7 +360,7 @@ struct SDHP_OPTION_DATA_SAVE_RECV
 	PBMSG_HEAD header; // C1:33
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE SkillKey[20];
 	BYTE GameOption;
 	BYTE QKey;
@@ -394,7 +394,7 @@ struct SDHP_RESET_INFO_SAVE_RECV
 	PBMSG_HEAD header; // C1:39
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	UINT Reset;
 	UINT ResetDay;
 	UINT ResetWek;
@@ -406,7 +406,7 @@ struct SDHP_MASTER_RESET_INFO_SAVE_RECV
 	PBMSG_HEAD header; // C1:3A
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	UINT Reset;
 	UINT MasterReset;
 	UINT MasterResetDay;
@@ -419,7 +419,7 @@ struct SDHP_RANKING_DUEL_SAVE_RECV
 	PBMSG_HEAD header; // C1:3C
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD WinScore;
 	DWORD LoseScore;
 };
@@ -429,7 +429,7 @@ struct SDHP_RANKING_BLOOD_CASTLE_SAVE_RECV
 	PBMSG_HEAD header; // C1:3D
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD score;
 };
 
@@ -438,7 +438,7 @@ struct SDHP_RANKING_CHAOS_CASTLE_SAVE_RECV
 	PBMSG_HEAD header; // C1:3E
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD score;
 };
 
@@ -447,7 +447,7 @@ struct SDHP_RANKING_DEVIL_SQUARE_SAVE_RECV
 	PBMSG_HEAD header; // C1:3F
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD score;
 };
 
@@ -456,7 +456,7 @@ struct SDHP_RANKING_ILLUSION_TEMPLE_SAVE_RECV
 	PBMSG_HEAD header; // C1:40
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD score;
 };
 
@@ -481,7 +481,7 @@ struct SDHP_SNS_DATA_SAVE_RECV
 	PWMSG_HEAD header; // C1:4E
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE data[256];
 };
 
@@ -490,7 +490,7 @@ struct SDHP_CUSTOM_MONSTER_REWARD_SAVE_RECV
 	PBMSG_HEAD header; // C1:52
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD MonsterClass;
 	DWORD MapNumber;
 	DWORD RewardValue1;
@@ -504,7 +504,7 @@ struct SDHP_RANKING_CUSTOM_ARENA_SAVE_RECV
 	PBMSG_HEAD header; // C1:55
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD number;
 	DWORD score;
 	DWORD rank;
@@ -515,7 +515,7 @@ struct SDHP_CONNECT_CHARACTER_RECV
 	PBMSG_HEAD header; // C1:70
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 };
 
 struct SDHP_DISCONNECT_CHARACTER_RECV
@@ -523,7 +523,7 @@ struct SDHP_DISCONNECT_CHARACTER_RECV
 	PBMSG_HEAD header; // C1:71
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 };
 
 struct SDHP_GLOBAL_WHISPER_RECV
@@ -531,8 +531,8 @@ struct SDHP_GLOBAL_WHISPER_RECV
 	PBMSG_HEAD header; // C1:72
 	WORD index;
 	char account[11];
-	char name[11];
-	char TargetName[11];
+	char name[14];
+	char TargetName[14];
 	char message[60];
 };
 
@@ -549,8 +549,8 @@ struct SDHP_MARRY_INFO_SAVE_RECV
 {
     PBMSG_HEAD header; // C1:F0
     WORD index;
-    char name[11];
-    char marryname[11];
+    char name[14];
+    char marryname[14];
     char mode[11];
 };
 
@@ -558,14 +558,14 @@ struct SDHP_CUSTOMQUEST_RECV
 {
     PBMSG_HEAD header; // C1:F1
     WORD index;
-    char name[11];
+    char name[14];
 };
 
 struct SDHP_CUSTOMQUEST_SAVE_RECV
 {
     PBMSG_HEAD header; // C1:F2
     WORD index;
-    char name[11];
+    char name[14];
 	DWORD quest;
 };
 
@@ -574,7 +574,7 @@ struct SDHP_SETCOIN_RECV
     PBMSG_HEAD header; // C1:F3
     WORD index;
     char account[11];
-	char name[11];
+	char name[14];
 	DWORD value1;
 	DWORD value2;
 	DWORD value3;
@@ -591,14 +591,14 @@ struct SDHP_CARESUME_RECV
 {
     PBMSG_HEAD header; // C1:F5
     WORD index;
-    char name[11];
+    char name[14];
 };
 
 struct SDHP_CARESUME_SAVE_RECV
 {
     PBMSG_HEAD header; // C1:F6
     WORD index;
-    char name[11];
+    char name[14];
 	WORD active;
 	WORD skill;
 	WORD map;
@@ -619,7 +619,7 @@ struct SDHP_RANKING_TVT_EVENT_SAVE_RECV
 	PBMSG_HEAD header; // C1:55
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD killcount;
 	DWORD deathcount;
 };
@@ -628,7 +628,7 @@ struct SDHP_CUSTOMNPCQUEST_RECV
 {
     PSBMSG_HEAD header; // C1:F1
     WORD index;
-    char name[11];
+    char name[14];
     WORD quest;
 	WORD indexnpc;
 };
@@ -637,7 +637,7 @@ struct SDHP_CUSTOMNPCQUEST_SAVE_RECV
 {
     PSBMSG_HEAD header; // C1:F2
     WORD index;
-    char name[11];
+    char name[14];
 	WORD quest;
 };
 
@@ -645,7 +645,7 @@ struct SDHP_CUSTOMNPCQUESTMONSTERSAVE_RECV
 {
     PSBMSG_HEAD header; // C1:F1
     WORD index;
-    char name[11];
+    char name[14];
     WORD quest;
 	DWORD monsterqtd;
 };
@@ -677,7 +677,7 @@ struct SDHP_CHARACTER_LIST_SEND
 struct SDHP_CHARACTER_LIST
 {
 	BYTE slot;
-	char name[11];
+	char name[14];
 	WORD level;
 	BYTE Class;
 	BYTE CtlCode;
@@ -692,7 +692,7 @@ struct SDHP_CHARACTER_CREATE_SEND
 	PBMSG_HEAD header; // C1:02
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE result;
 	BYTE slot;
 	BYTE Class;
@@ -713,7 +713,7 @@ struct SDHP_CHARACTER_INFO_SEND
 	PWMSG_HEAD header; // C2:04
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE result;
 	BYTE Class;
 	WORD Level;
@@ -809,7 +809,7 @@ struct SDHP_OPTION_DATA_SEND
 	PBMSG_HEAD header; // C1:08
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE SkillKey[20];
 	BYTE GameOption;
 	BYTE QKey;
@@ -845,7 +845,7 @@ struct SDHP_CHARACTER_NAME_CHECK_SEND
 	PBMSG_HEAD header; // C1:0A
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE result;
 };
 
@@ -854,8 +854,8 @@ struct SDHP_CHARACTER_NAME_CHANGE_SEND
 	PBMSG_HEAD header; // C1:0B
 	WORD index;
 	char account[11];
-	char OldName[11];
-	char NewName[11];
+	char OldName[14];
+	char NewName[14];
 	BYTE result;
 };
 
@@ -880,7 +880,7 @@ struct SDHP_GLOBAL_POST_SEND
 	PBMSG_HEAD header; // C1:20
 	WORD MapServerGroup;
 	BYTE type;
-	char name[11];
+	char name[14];
 	char message[60];
 };
 
@@ -902,7 +902,7 @@ struct SDHP_SNS_DATA_SEND
 	PWMSG_HEAD header; // C1:24
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE result;
 	BYTE data[256];
 };
@@ -912,9 +912,9 @@ struct SDHP_GLOBAL_WHISPER_SEND
 	PBMSG_HEAD header; // C1:72
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	BYTE result;
-	char TargetName[11];
+	char TargetName[14];
 	char message[60];
 };
 
@@ -923,8 +923,8 @@ struct SDHP_GLOBAL_WHISPER_ECHO_SEND
 	PBMSG_HEAD header; // C1:73
 	WORD index;
 	char account[11];
-	char name[11];
-	char SourceName[11];
+	char name[14];
+	char SourceName[14];
 	char message[60];
 };
 
@@ -932,7 +932,7 @@ struct SDHP_CUSTOMQUEST_SEND
 {
     PBMSG_HEAD header; // C1:F1
     WORD index;
-    char name[11];
+    char name[14];
 	DWORD quest;
 };
 
@@ -948,7 +948,7 @@ struct SDHP_CARESUME_SEND
 {
     PBMSG_HEAD header; // C1:F5
     WORD index;
-    char name[11];
+    char name[14];
 	WORD active;
 	WORD skill;
 	WORD map;
@@ -978,7 +978,7 @@ struct THEGIFT_GD_SAVE_DATA
 {
 	PSBMSG_HEAD header;
 	WORD	index;
-	char	Name[11];
+	char	Name[14];
 	BYTE	TheGift;
 };
 
@@ -1118,7 +1118,7 @@ void SaveDataCustomItemBank(GSSENDDS_COUNT_ITEMBANK* lpMsg, int aIndex);
 struct DATA_VIEWTOPRANKING
 {
 	PSWMSG_HEAD header;
-	char NameChar[11];
+	char NameChar[14];
 	char GuildName[11];
 	BYTE GuildMark[32];
 	DWORD TongPoint;
@@ -1132,7 +1132,7 @@ struct DATA_VIEWTOPRANKING
 struct REQUESTINFO_CHARTOP
 {
 	PSBMSG_HEAD header; // C3:F3:03
-	char NameChar[11];
+	char NameChar[14];
 	int aIndex;
 };
 void CGetInfoCharTop(REQUESTINFO_CHARTOP* lpMsg, int index);
@@ -1164,7 +1164,7 @@ struct SDHP_MONTERPOINT_SAVE_SEND
 	PBMSG_HEAD header; // C1:39
 	WORD index;
 	char account[11];
-	char name[11];
+	char name[14];
 	DWORD PointAdd;
 };
 

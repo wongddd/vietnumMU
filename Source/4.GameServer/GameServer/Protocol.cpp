@@ -803,6 +803,7 @@ void ProtocolCore(BYTE head,BYTE* lpMsg,int size,int aIndex,int encrypt,int seri
 		case 0xCB:
 			FriendRoomInvitationReq((PMSG_ROOM_INVITATION*)lpMsg,aIndex);
 			break;
+	#if(GAMESERVER_LANGUAGE!=3)
 		case 0xD0:
 			switch(lpMsg[3])
 			{
@@ -843,6 +844,7 @@ void ProtocolCore(BYTE head,BYTE* lpMsg,int size,int aIndex,int encrypt,int seri
 					break;
 			}
 			break;
+	#endif
 		case 0xD1:
 			switch(lpMsg[3])
 			{

@@ -60,13 +60,32 @@ This is a **Mu Online private server** emulator based on IGCN / X-Team 系列的
 
 ## Season Versioning
 
-GameServer 使用预处理器宏切换版本。定义位于 `stdafx.h` 和 `.vcxproj` 配置：
+GameServer 使用预处理器宏切换版本和语言。定义位于 `stdafx.h` 和 `.vcxproj` 配置：
 ```cpp
 GAMESERVER_UPDATE=401  // Season 4
 GAMESERVER_UPDATE=603  // Season 6
 GAMESERVER_UPDATE=803  // Season 8
 ```
 版本特定代码通过 `#if(GAMESERVER_UPDATE>=XXX)` 守卫。
+
+## 语言宏 GAMESERVER_LANGUAGE
+
+`GAMESERVER_LANGUAGE` 控制移动/攻击等协议的**封包头字节码**，定义在 `Protocol.h:8-28`。
+
+| 值 | 协议码 (CODE1~4) | 对应客户端区域 |
+|----|-------------------|---------------|
+| 0  | 0xD3/0xD7/0xDF/0x10 | 韩/日/英语(旧) |
+| 1  | 0xD4/0x11/0x15/0xDB | 国际服(默认) |
+| 2  | 0x1D/0xDC/0xD6/0xD7 | 越南/其他 |
+| 3  | 0xD9/0xD7/0xD0/0x1D | **中国 (CHN)** |
+| 4+ | 自定义预留 | — |
+
+**当前设定**：
+- `Release_EX603` → 必须使用 `GAMESERVER_LANGUAGE=3`（匹配中文客户端）
+- `Release_EX803` → 使用 `GAMESERVER_LANGUAGE=1`（国际服）
+- `Release_EX401` → 使用 `GAMESERVER_LANGUAGE=0`（旧版）
+
+> **注意**：Release_EX603 配置在 `.vcxproj` 中默认为 `GAMESERVER_LANGUAGE=1`，若对接中文客户端需改为 `3`。否则客户端发送的 0xD9/0xD7 等协议头无法被服务器识别。
 
 ---
 
